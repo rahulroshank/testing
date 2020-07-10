@@ -1,0 +1,4136 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;cURL&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="cURL">cURL</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#about-this-guide" class="toc-h1 toc-link" data-title="About This Guide">About This Guide</a>
+          </li>
+          <li>
+            <a href="#introduction-to-framework-for-open-distributed-manageability-fodim" class="toc-h1 toc-link" data-title="Introduction to Framework for Open Distributed Manageability(FODIM)">Introduction to Framework for Open Distributed Manageability(FODIM)</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#key-benefits-of-the-fodim-api" class="toc-h2 toc-link" data-title="Key benefits of the FODIM API">Key benefits of the FODIM API</a>
+                  </li>
+                  <li>
+                    <a href="#fodim-logical-architecture" class="toc-h2 toc-link" data-title="FODIM logical architecture">FODIM logical architecture</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#using-the-fodim-api" class="toc-h1 toc-link" data-title="Using the FODIM API">Using the FODIM API</a>
+          </li>
+          <li>
+            <a href="#http-request-methods-responses-and-error-codes-for-fodim-rest-api" class="toc-h1 toc-link" data-title="HTTP Request Methods, Responses, and Error Codes for FODIM REST API">HTTP Request Methods, Responses, and Error Codes for FODIM REST API</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-status-codes" class="toc-h2 toc-link" data-title="HTTP status codes">HTTP status codes</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#authenticating-http-requests" class="toc-h1 toc-link" data-title="Authenticating HTTP requests">Authenticating HTTP requests</a>
+          </li>
+          <li>
+            <a href="#list-of-supported-apis" class="toc-h1 toc-link" data-title="List of supported APIs">List of supported APIs</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#viewing-the-list-of-supported-redfish-services" class="toc-h2 toc-link" data-title="Viewing the list of supported Redfish services">Viewing the list of supported Redfish services</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#creating-and-managing-sessions" class="toc-h1 toc-link" data-title="Creating and managing sessions">Creating and managing sessions</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#creating-a-session" class="toc-h2 toc-link" data-title="Creating a session">Creating a session</a>
+                  </li>
+                  <li>
+                    <a href="#listing-the-active-sessions" class="toc-h2 toc-link" data-title="Listing the active sessions">Listing the active sessions</a>
+                  </li>
+                  <li>
+                    <a href="#viewing-information-about-a-single-session" class="toc-h2 toc-link" data-title="Viewing information about a single session">Viewing information about a single session</a>
+                  </li>
+                  <li>
+                    <a href="#deleting-a-session" class="toc-h2 toc-link" data-title="Deleting a session">Deleting a session</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#configuring-roles-and-privileges-for-a-user" class="toc-h1 toc-link" data-title="Configuring roles and privileges for a user">Configuring roles and privileges for a user</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#roles" class="toc-h2 toc-link" data-title="Roles">Roles</a>
+                  </li>
+                  <li>
+                    <a href="#privileges" class="toc-h2 toc-link" data-title="Privileges">Privileges</a>
+                  </li>
+                  <li>
+                    <a href="#mapping-of-privileges-to-roles-in-the-fodim-api" class="toc-h2 toc-link" data-title="Mapping of privileges to roles in the FODIM API">Mapping of privileges to roles in the FODIM API</a>
+                  </li>
+                  <li>
+                    <a href="#creating-a-role" class="toc-h2 toc-link" data-title="Creating a role">Creating a role</a>
+                  </li>
+                  <li>
+                    <a href="#listing-roles" class="toc-h2 toc-link" data-title="Listing roles">Listing roles</a>
+                  </li>
+                  <li>
+                    <a href="#getting-information-about-a-role" class="toc-h2 toc-link" data-title="Getting information about a role">Getting information about a role</a>
+                  </li>
+                  <li>
+                    <a href="#updating-a-role" class="toc-h2 toc-link" data-title="Updating a role">Updating a role</a>
+                  </li>
+                  <li>
+                    <a href="#deleting-a-role" class="toc-h2 toc-link" data-title="Deleting a role">Deleting a role</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#creating-and-managing-user-accounts" class="toc-h1 toc-link" data-title="Creating and managing user accounts">Creating and managing user accounts</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#supported-apis" class="toc-h2 toc-link" data-title="Supported APIs:"><strong>Supported APIs</strong>:</a>
+                  </li>
+                  <li>
+                    <a href="#creating-an-account" class="toc-h2 toc-link" data-title="Creating an account">Creating an account</a>
+                  </li>
+                  <li>
+                    <a href="#listing-user-accounts" class="toc-h2 toc-link" data-title="Listing user accounts">Listing user accounts</a>
+                  </li>
+                  <li>
+                    <a href="#getting-single-account-information" class="toc-h2 toc-link" data-title="Getting single account information">Getting single account information</a>
+                  </li>
+                  <li>
+                    <a href="#updating-an-account" class="toc-h2 toc-link" data-title="Updating an account">Updating an account</a>
+                  </li>
+                  <li>
+                    <a href="#deleting-an-account" class="toc-h2 toc-link" data-title="Deleting an account">Deleting an account</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#aggregating-and-managing-southbound-infrastructure" class="toc-h1 toc-link" data-title="Aggregating and managing southbound infrastructure">Aggregating and managing southbound infrastructure</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#prerequisites" class="toc-h2 toc-link" data-title="Prerequisites">Prerequisites</a>
+                  </li>
+                  <li>
+                    <a href="#supported-endpoints" class="toc-h2 toc-link" data-title="Supported Endpoints">Supported Endpoints</a>
+                  </li>
+                  <li>
+                    <a href="#the-aggregation-service-root" class="toc-h2 toc-link" data-title="The aggregation service root">The aggregation service root</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#use-case-for-server-aggregation" class="toc-h1 toc-link" data-title="Use case for server aggregation">Use case for server aggregation</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#adding-a-server" class="toc-h2 toc-link" data-title="Adding a server">Adding a server</a>
+                  </li>
+                  <li>
+                    <a href="#knowing-the-addition-status" class="toc-h2 toc-link" data-title="Knowing the addition status">Knowing the addition status</a>
+                  </li>
+                  <li>
+                    <a href="#resetting-one-or-more-servers" class="toc-h2 toc-link" data-title="Resetting one or more servers">Resetting one or more servers</a>
+                  </li>
+                  <li>
+                    <a href="#knowing-the-reset-status" class="toc-h2 toc-link" data-title="Knowing the reset status">Knowing the reset status</a>
+                  </li>
+                  <li>
+                    <a href="#changing-the-boot-order-of-a-set-of-servers-to-default-settings" class="toc-h2 toc-link" data-title="Changing the boot order of a set of servers to default settings">Changing the boot order of a set of servers to default settings</a>
+                  </li>
+                  <li>
+                    <a href="#knowing-the-change-status" class="toc-h2 toc-link" data-title="Knowing the change status">Knowing the change status</a>
+                  </li>
+                  <li>
+                    <a href="#deleting-a-server" class="toc-h2 toc-link" data-title="Deleting a server">Deleting a server</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#viewing-the-resource-inventory" class="toc-h1 toc-link" data-title="Viewing the resource inventory">Viewing the resource inventory</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#search-and-filter" class="toc-h2 toc-link" data-title="Search and filter">Search and filter</a>
+                  </li>
+                  <li>
+                    <a href="#use-case-for-viewing-the-fabric-inventory" class="toc-h2 toc-link" data-title="Use case for viewing the fabric inventory">Use case for viewing the fabric inventory</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#managing-tasks" class="toc-h1 toc-link" data-title="Managing tasks">Managing tasks</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#viewing-a-collection-of-tasks" class="toc-h2 toc-link" data-title="Viewing a Collection of tasks">Viewing a Collection of tasks</a>
+                  </li>
+                  <li>
+                    <a href="#viewing-information-of-a-single-task" class="toc-h2 toc-link" data-title="Viewing information of a single task">Viewing information of a single task</a>
+                  </li>
+                  <li>
+                    <a href="#monitoring-a-task-through-task-monitor" class="toc-h2 toc-link" data-title="Monitoring a task through task monitor">Monitoring a task through task monitor</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#subscribing-to-events" class="toc-h1 toc-link" data-title="Subscribing to events ">Subscribing to events <a name="events"></a></a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#creating-an-event-subscription" class="toc-h2 toc-link" data-title="Creating an event subscription">Creating an event subscription</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-5" class="toc-h2 toc-link" data-title="Request Parameters">Request Parameters</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#end-to-end-use-cases" class="toc-h1 toc-link" data-title="End-to-end use cases">End-to-end use cases</a>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='about-this-guide'>About This Guide</h1>
+<p>This document provides helpful reference
+information for the REST API requests
+that you can send to the FODIM API.
+This document is intended for the
+technical personnel who customize and
+deploy this optimized solution according
+to the requirements of the end customer.</p>
+<h1 id='introduction-to-framework-for-open-distributed-manageability-fodim'>Introduction to Framework for Open Distributed Manageability(FODIM)</h1>
+<p>Welcome to the FODIM API!</p>
+
+<p>Managing a multitude of IT infrastructure devices of different make and type is something of a task, especially, when they exist across multiple locations. With the help of the FODIM API and a set of plugins(generic Redfish plugin and vendor-specific plugins such as HPE iLO, CFM), you can virtually bring all the devices(compute, storage, and networking) to be managed in one place.</p>
+
+<p>The FODIM API is a programming interface enabling easy and secure management of wide range of southbound equipment distributed across multiple data centers.</p>
+
+<p>The APIs exposed by the FODIM are organized around REST and are designed as per DMTF&#39;s Redfish® Scalable Platforms API(Redfish) specification 2019.3 <a href="https://www.dmtf.org/sites/default/files/standards/documents/DSP2046_2019.3.pdf">DSP2046</a>.</p>
+
+<p>All request and response bodies, including errors, are in JSON format.</p>
+<h2 id='key-benefits-of-the-fodim-api'>Key benefits of the FODIM API</h2>
+<ul>
+<li><p><strong>Comprehensive lifecycle management of southbound infrastructure</strong>: the FODIM API maintains a central repository of southbound equipment and simplifies device discovery, configuration, monitoring, and administration of all devices.</p></li>
+<li><p><strong>Scalable</strong>: leveraging the resource aggregation capability of the FODIM API, you can manage a wide range of different southbound devices(from stand-alone to rack mount and bladed to large-scale environments).</p></li>
+<li><p><strong>Simplifies interaction of northbound clients with southbound systems</strong>: the FODIM API offers a protocol-independent eventing mechanism using which northbound clients get notified of alarms from southbound equipment.</p></li>
+</ul>
+<h2 id='fodim-logical-architecture'>FODIM logical architecture</h2>
+<p>The FODIM based on Redfish standards uses RESTful API to create an environment that is designed to be implemented on many different models of servers and other IT infrastructure devices for years to come. These devices may be quite different from one another. For this reason, the Redfish API does not specify the URIs to various resources.</p>
+<h1 id='using-the-fodim-api'>Using the FODIM API</h1>
+<p>The FODIM API is available on version __ or later.</p>
+
+<p>To access the RESTful APIs, you need an HTTPS-capable client, such as a web browser with a REST Client plugin extension, or a Desktop REST Client application (such as Postman), or cURL (a popular, free command line utility).
+You can also easily write simple REST clients for RESTful APIs using modern scripting languages.</p>
+
+<p><strong>Tip:</strong>
+It is good to use a tool, such as cURL or Postman initially to perform requests. Later, you will want to write your own scripting code to do this. </p>
+
+<p><strong>Note:</strong>
+The examples shown in this document use cURL to make HTTP requests.</p>
+
+<p>Curl is a command line tool which helps you get or send information through URLs using supported protocols(<code>HTTP</code> in the case of FODIM).
+It is available at <a href="http://curl.haxx.se/">http://curl.haxx.se/</a> .</p>
+
+<p>All the cURL examples use the following options(flags):</p>
+
+<ul>
+<li><p><code>--insecure</code> 
+    bypasses validation of the HTTPS certificate. In actual usage, the FODIM RESTful API should be configured to use a  user-supplied  certificate and this option is not necessary. </p></li>
+<li><p><code>-i</code> 
+   returns HTTP response headers.</p></li>
+</ul>
+<h1 id='http-request-methods-responses-and-error-codes-for-fodim-rest-api'>HTTP Request Methods, Responses, and Error Codes for FODIM REST API</h1>
+<p>Following are the Redfish defined HTTP methods that you can use to implement various actions:</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request Methods</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>GET</code> [Read Requests]</td>
+<td>Use this method to request a representation of a specified resource (single resource or collection).</td>
+</tr>
+<tr>
+<td><code>PATCH</code> [Update]</td>
+<td>Use this method to apply partial modifications to a resource.</td>
+</tr>
+<tr>
+<td><code>POST</code> [Create] [Actions]</td>
+<td>Use this method to create a new resource. Submit this request to the resource collection to which you want to add the new resource. You can also use this method to initiate operations on an object.</td>
+</tr>
+<tr>
+<td><code>DELETE</code> [Delete]</td>
+<td>Use this method to delete a resource.</td>
+</tr>
+</tbody></table>
+
+<p>The FODIM Redfish supports the following responses:</p>
+
+<table><thead>
+<tr>
+<th>Responses</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Metadata responses</td>
+<td>Describes the resources and types exposed by the service to generic clients.</td>
+</tr>
+<tr>
+<td>Resource responses</td>
+<td>Response in JSON format for an individual resource.</td>
+</tr>
+<tr>
+<td>Resource collection responses</td>
+<td>Response in JSON format for a collection of a resources.</td>
+</tr>
+<tr>
+<td>Error responses</td>
+<td>In case of an HTTP error, a high level JSON response is provided with additional information</td>
+</tr>
+</tbody></table>
+<h2 id='http-status-codes'>HTTP status codes</h2>
+<p>Following are the HTTP Status codes with their descriptions:</p>
+
+<table><thead>
+<tr>
+<th>Status Code<br></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200 OK</td>
+<td>Successful completion of the request with representation in the body</td>
+</tr>
+<tr>
+<td>201 Created</td>
+<td>A new resource is successfully created with the Location header set to well-defined URI for the newly created resource. The response body includes the representation of the newly created resource.</td>
+</tr>
+<tr>
+<td>202 Accepted</td>
+<td>The request has been accepted for processing but not processed. The Location header is set to URI of a task monitor that can be queried later for the status of the operation.</td>
+</tr>
+<tr>
+<td>204 No content</td>
+<td>The request was a success but no content was returned in the body of the response.</td>
+</tr>
+<tr>
+<td>301 Moved Permanently</td>
+<td>The requested resource resides in a different URI given by the Location headers.</td>
+</tr>
+<tr>
+<td>302 Found</td>
+<td>The requested resource temporarily resides in a different URI.</td>
+</tr>
+<tr>
+<td>304 Not Modified</td>
+<td>When the service has performed conditional GET request but the resource content has not changed.</td>
+</tr>
+<tr>
+<td>400 Bad Request</td>
+<td>The request could not be performed due to missing or invalid information. An extended error message is returned in the response body.</td>
+</tr>
+<tr>
+<td>401 Unauthorized</td>
+<td>Missing or invalid authentication credentials included with a request.</td>
+</tr>
+<tr>
+<td>403 Forbidden</td>
+<td>The server recognizes the credentials to be not having the necessary authorization to perform the operation.</td>
+</tr>
+<tr>
+<td>404 Not Found</td>
+<td>The request specified the URI of a non-existing resource.</td>
+</tr>
+<tr>
+<td>405 Method Not Allowed</td>
+<td>When the HTTP verb specified in the request (GET, PATCH, DELETE, and so on) is not supported for a particular request URI. The response includes &quot;Allow&quot; header that lists the supported methods.</td>
+</tr>
+<tr>
+<td>406 Not Acceptable</td>
+<td>When the resource fails to generate a response that matches the media types specified in the Accept header.</td>
+</tr>
+<tr>
+<td>409 Conflict</td>
+<td>A creation or an update cannot be completed because it would conflict with the current state of the resources supported by the platform.</td>
+</tr>
+<tr>
+<td>410 Gone</td>
+<td>When the requested resource is no longer available in the server and there is no forwarding address available as well. This condition is expected to be considered permanent. Clients with hyperlink editing capabilities SHOULD delete references to the Request-URI after user approval. If the server does not know, or has no facility to determine, whether or not the condition is permanent, the status code 404 (Not Found) SHOULD be used instead. This response is cacheable unless indicated otherwise.</td>
+</tr>
+<tr>
+<td>411 Length Required</td>
+<td>When the content of the length is not specified using the Content-Length header.</td>
+</tr>
+<tr>
+<td>412 Precondition Failed</td>
+<td>When pre-condition (OData-version) checks fail.</td>
+</tr>
+<tr>
+<td>415 Unsupported Media Type</td>
+<td>When the Content-type specified for the body does not match.</td>
+</tr>
+<tr>
+<td>428 Precondition Required</td>
+<td>When the request does not provide the pre-condition such as an If-Match</td>
+</tr>
+<tr>
+<td>431 Request Header Field Too Large</td>
+<td>When the individual header or all the header fields in a request are too large, the server does not fulfils the request.</td>
+</tr>
+<tr>
+<td>500 Internal Server Error</td>
+<td>When the server encounters and unexpected condition that prevents it from fulfilling the request.</td>
+</tr>
+<tr>
+<td>501 Not Implemented</td>
+<td>When the server does not recognize or supports the method for any resource.</td>
+</tr>
+<tr>
+<td>503 Service Unavailable</td>
+<td>When the server is currently unable to service the request due to temporary overloading or maintenance.</td>
+</tr>
+<tr>
+<td>507 Insufficient Storage</td>
+<td>When the size of the response is too big for the server to build the response.</td>
+</tr>
+</tbody></table>
+<h1 id='authenticating-http-requests'>Authenticating HTTP requests</h1>
+<p>Following authentication methods can be implemented to authenticate requests to the FODIM REST API:</p>
+
+<ul>
+<li><p><strong>HTTP BASIC authentication</strong></p>
+
+<p>You can implement HTTP BASIC authentication by providing valid FODIM user name and password in an HTTP <code>Authorization: Basic</code> header.</p></li>
+</ul>
+<pre class="highlight plaintext"><code>curl -i --insecure -X GET\
+-H 'Accept:application/json' \
+-H 'Authorization:Basic {username}:{password}' \
+'https://{FODIM_IP_address}/redfish/v1/AggregationService'
+</code></pre>
+<ul>
+<li><p><strong>Redfish session login authentication</strong></p>
+
+<p>You can implement Redfish Session Login Authentication by creating a Redfish login session through session management interface. To learn more about a session, see <a href="#create_a_session">Creating and managing sessions</a> section.</p>
+
+<p>Every session that is created has an authentication token called <code>X-AUTH-TOKEN</code> associated with it.</p>
+
+<p>To authenticate subsequent requests, provide this token in the <code>X-AUTH-TOKEN</code> request header.</p></li>
+</ul>
+<pre class="highlight plaintext"><code>curl -i --insecure -X GET \
+-H 'Accept:application/json' \
+-H "X-Auth-Token:{X-Auth-Token}" \
+'https://{FODIM_IP_address}/redfish/v1/AggregationService'
+
+
+</code></pre>
+<p><strong>NOTE:</strong></p>
+
+<ul>
+<li><p>When Basic Auth is used, a session is not created.</p></li>
+<li><p>If you perform an HTTP operation(without providing authentication) on resources other than those mentioned below, you will receive an HTTP <code>401 unauthorized</code> error.</p>
+
+<table><thead>
+<tr>
+<th>Resource</th>
+<th>URI</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>The Redfish service root</td>
+<td><code>GET</code>  <code>/redfish</code></td>
+<td>The URI for the Redfish Service Root. It returns the Redfish services&#39; version.</td>
+</tr>
+<tr>
+<td>The list of Redfish services</td>
+<td><code>GET</code>  <code>/redfish/v1</code></td>
+<td>It returns a list of available services.</td>
+</tr>
+<tr>
+<td>The $metadata</td>
+<td><code>GET</code>  <code>/redfish/v1/$metadata</code></td>
+<td>the Redfish Metadata Document.</td>
+</tr>
+<tr>
+<td>The OData Service Document</td>
+<td><code>GET</code>  <code>/redfish/v1/odata</code></td>
+<td>the Redfish OData Service Document.</td>
+</tr>
+<tr>
+<td>The <code>Sessions</code> resource</td>
+<td><code>POST</code>  <code>/redfish/v1/SessionService/Sessions</code></td>
+<td>Creates a Redfish login session.</td>
+</tr>
+</tbody></table></li>
+<li><p>An <code>X-AUTH-TOKEN</code> is valid and a session is open only for 30 minutes, unless the user continues to send requests to a Redfish service using this token.</p></li>
+<li><p>An idle session is automatically terminated after the timeout interval.</p></li>
+</ul>
+<h1 id='list-of-supported-apis'>List of supported APIs</h1>
+<p>The FODIM Redfish supports the following APIs:</p>
+
+<table><thead>
+<tr>
+<th>URI</th>
+<th>Operation Applicable</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>/redfish</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/odata</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/$metadata</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/SessionService</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/SessionService/Sessions</td>
+<td>POST, GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/SessionService/Sessions/{session id}</td>
+<td>GET, DELETE</td>
+</tr>
+<tr>
+<td>/redfish/v1/AccountService</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/AccountService/Accounts</td>
+<td>POST, GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/AccountService/Accounts/{Account id}</td>
+<td>GET, DELETE, PATCH</td>
+</tr>
+<tr>
+<td>/redfish/v1/AccountService/PrivilegeRegistry</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/AccountService/Roles</td>
+<td>POST, GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/AccountService/Roles/{Roles id}</td>
+<td>GET, DELETE, PATCH</td>
+</tr>
+<tr>
+<td>/redfish/v1/AggregationService/Actions/AggregationService.Add</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>/redfish/v1/AggregationService/Actions/AggregationService.Remove</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>/redfish/v1/AggregationService/Actions/AggregationService.Reset</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>/redfish/v1/AggregationService/Actions/AggregationService.SetDefaultBootOrder</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/Memory</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/MemoryDomains</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/NetworkInterfaces</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/EthernetInterfaces</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/bios</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/SecureBoot</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/Storage</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/Processors</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/Memory/{MemoryId}</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/EthernetInterfaces/{Id}</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems/{ComputerSystemId}/Processors/{Id}</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Chassis</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Chassis/{ComputerSystemId}</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Chassis/{ComputerSystemId}/Thermal</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Chassis/{ComputerSystemId}/NetworkAdapters</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Chassis/{ComputerSystemId}/Power</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Systems?filter={searchKeys}%20{conditionKeys}%20{value}</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/EventService/Subscriptions</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>/redfish/v1/Fabrics</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Fabrics/{fabricID}</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Fabrics/{fabricID}/Switches</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Fabrics/{fabricID}/Switches/{switchID}</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Fabrics/{fabricID}/Switches/{switchID}/Ports<br></td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/Fabrics/{fabricID} /Switches/{switchID}/Ports/{portid}<br></td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/TaskService</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/TaskService/Tasks</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/redfish/v1/TaskService/Tasks/{TaskID}</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>/taskmon/{TaskID}</td>
+<td>GET</td>
+</tr>
+</tbody></table>
+
+<p><strong>NOTE:</strong></p>
+
+<p>*<code>ComputerSystemId</code> is FODIM specified unique id of the server. It is represented as <code>{UUID}:{n}</code> in the FODIM API( Example : ba0a6871-7bc4-5f7a-903d-67f3c205b08c:1 )</p>
+<h2 id='viewing-the-list-of-supported-redfish-services'>Viewing the list of supported Redfish services</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>The URI for the Redfish Service Root.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>All the available services in the Service Root.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl -i GET \
+              'https://FODIM_IP\_address/redfish/v1'
+
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>status:200
+allow:GET
+cache-control:no-cache
+content-type:application/json; charset=UTF-8
+etag:W/"12345"link: &lt;/redfish/v1/SchemaStore/en/ServiceRoot.json/&gt;; rel=describedby
+odata-version:4.0
+x-frame-options:sameorigin
+content-length:799 bytes
+date:Wed,
+13 Nov 2019 10:23:52 GMT+7m 16s
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.context":"/redfish/v1/$metadata#ServiceRoot.ServiceRoot",
+   "@odata.etag":"W/\"12345\"",
+   "@odata.id":"/redfish/v1/",
+   "@odata.type":"#ServiceRoot.v1_5_0.ServiceRoot",
+   "Id":"RootService",
+   "SessionService":{ 
+      "@odata.id":"/redfish/v1/SessionService"
+   },
+   "AccountService":{ 
+      "@odata.id":"/redfish/v1/AccountService"
+   },
+   "EventService":{ 
+      "@odata.id":"/redfish/v1/EventService"
+   },
+   "Tasks":{ 
+      "@odata.id":"/redfish/v1/TaskService"
+   },
+   "AggregationService":{ 
+      "@odata.id":"/redfish/v1/AggregationService"
+   },
+   "Systems":{ 
+      "@odata.id":"/redfish/v1/Systems"
+   },
+   "Chassis":{ 
+      "@odata.id":"/redfish/v1/Chassis"
+   },
+   "FabricService":{ 
+      "@odata.id":"/redfish/v1/Fabrics"
+   },
+   "Links":{ 
+      "Sessions":{ 
+         "@odata.id":"/redfish/v1/SessionService/Sessions"
+      }
+   },
+   "Name":"Root Service",
+   "Oem":{ 
+
+   },
+   "RedfishVersion":"1.7.0",
+   "UUID":"9b305353-b1e8-4680-bc1d-4b4a2e0de096"
+}
+</code></pre><h1 id='creating-and-managing-sessions'>Creating and managing sessions</h1>
+<p>A session represents a window of user&#39;s login with a Redfish service and contains details about the user and the user activity. You can run multiple sessions simultaneously on FODIM.</p>
+
+<p>The FODIM offers Redfish SessionService interface for managing sessions and exposes APIs to achieve the following:</p>
+
+<ul>
+<li><p>Creating a session</p></li>
+<li><p>Listing active sessions</p></li>
+<li><p>Deleting a session</p></li>
+</ul>
+
+<p><strong>Supported APIs</strong></p>
+
+<ul>
+<li><p><code>/redfish/v1/SessionService</code></p></li>
+<li><p><code>/redfish/v1/SessionService/Sessions</code></p></li>
+<li><p><code>/redfish/v1/SessionService/Sessions/{session id}</code></p></li>
+</ul>
+<h2 id='creating-a-session'>Creating a session</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>POST</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/SessionService/Sessions</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>This endpoint is used to create a session to implement authentication. Creating a session allows you to obtain an X-AUTH-TOKEN which is then used to authenticate other services.</td>
+</tr>
+<tr>
+<td><strong>Authentication</strong></td>
+<td>No authentication is required.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>An  <code>X-AUTH-TOKEN</code>  header containing session authentication token.<br>   A <code>Location</code> header that contains a link to the newly created session instance.<br>   Message in the JSON response body saying that the session is created .<br></td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>201</code> on success</td>
+</tr>
+</tbody></table>
+
+<p><br>
+<strong>Note:</strong><br></p>
+
+<p>It is a good practice to make note of the <strong>session authentication token</strong> returned in the <code>X-AUTH-TOKEN</code> header and <strong>session id</strong> returned in the <code>Location</code> header. You will need the <strong>session authentication token</strong> to authenticate subsequent requests to the FODIM API and the <strong>session id</strong> to log out later.</p>
+<pre class="highlight plaintext"><code>curl --insecure -X POST \
+   -H "Content-Type:application/json" \
+   -d \
+'{
+"UserName": "{username},
+"Password": "{password}"
+}' \
+ 'https://{FODIM_IP_address}/redfish/v1/SessionService/Sessions'
+
+
+</code></pre><h3 id='request-uri-parameters'>Request URI parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Username</td>
+<td>string</td>
+<td>User name for the user account for this session.</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>string</td>
+<td>Password for the user account for this session.</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Sample Request body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"Username": "abc",
+"Password": "abc123"
+}
+</code></pre>
+<blockquote>
+<p>Sample Response header</p>
+</blockquote>
+<pre class="highlight plaintext"><code>Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json; charset=UTF-8
+Etag: W/"02C2D1BB"
+Link: &lt;/redfish/v1/SessionService/Sessions/1a547199-0dd3-42de-9b24-1b801d4a1e63/&gt;; rel=self
+Location: \{FODIM\_IP_address\}/redfish/v1/SessionService/Sessions/1a547199-0dd3-42de-9b24-1b801d4a1e63
+Odata-Version: 4.0
+**X-Auth-Token: 46987bb2-0df7-44c1-8668-44f2ec86dbe3**
+X-Frame-Options: sameorigin
+Date:
+Thu, 22 Aug 2019 21:23:21 GMT+6m 30s
+Transfer-Encoding: chunked
+</code></pre>
+<blockquote>
+<p>Sample Response body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>"error":{
+"code": "iLO.0.10.ExtendedInfo",
+"message": "See @Message.ExtendedInfo for more information.",
+"@Message.ExtendedInfo":[
+{
+"MessageId": "Base.1.0.Created"
+}
+]
+}
+}
+</code></pre><h2 id='listing-the-active-sessions'>Listing the active sessions</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/SessionService/Sessions</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>This endpoint retrieves a list of active sessions.</td>
+</tr>
+<tr>
+<td><strong>Authentication</strong></td>
+<td>X-AUTH-TOKEN Authorization or Basic Authorization.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>A list of active user sessions.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+-H 'Accept:application/json' \
+-H "X-Auth-Token:{X-Auth-Token}" \
+'https://FODIM_IP_address/redfish/v1/SessionService/Sessions'
+
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Cache-Control:  
+no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"16B6EF53"
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   
+Wed, 18 Sep 2019 06:02:58 GMT+6m 41s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p>** Sample Response body **</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"@odata.context": "/redfish/v1/$metadata#SessionCollection.SessionCollection",
+"@odata.etag": "W/\\\"117102B2\\\"",
+"@odata.id": "/redfish/v1/SessionService/Sessions/",
+"@odata.type": "#SessionCollection.SessionCollection",
+"Name": "Sessions",
+"Description": "Bruce User Sessions",
+"Members@odata.count": 3,
+"Members":[
+{
+"@odata.id": "/redfish/v1/SessionService/Sessions/13d28b5b-3ead-4ec4-85cc-a83791294589/"
+},
+{
+"@odata.id": "/redfish/v1/SessionService/Sessions/194afeda-46d2-442b-98dc-468dab6cc1df/"
+},
+{
+"@odata.id": "/redfish/v1/SessionService/Sessions/4b53dcf0-e650-4153-b73a-398ed1125f44/"
+}
+]
+}
+</code></pre><h2 id='viewing-information-about-a-single-session'>Viewing information about a single session</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/SessionService/Sessions/{session id}</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A specific user session.</td>
+</tr>
+<tr>
+<td><strong>Authentication</strong></td>
+<td>X-AUTH-TOKEN Authorization or Basic Authorization.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Details of this session.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+-H 'Accept:application/json' \
+-H "X-Auth-Token:{X-Auth-Token}" \
+'https://FODIM_IP_address/redfish/v1/SessionService/Sessions/{session id}'
+
+
+</code></pre>
+<p><br>
+<strong>NOTE:</strong></p>
+
+<p>Replace <code>{session id}</code> with the Session Id returned in the <code>Location</code> header from session creation.</p>
+
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Cache-Control:  no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"16B6EF53"
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   Thu, 12 Sep 2019 19:27:48 GMT+6m 2s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"@odata.context": "/redfish/v1/$metadata#Session.Session",
+"@odata.etag": "W/\"16B6EF53\"",
+"@odata.id": "/redfish/v1/SessionService/Sessions/1e0492f8-112d-4f9a-8102-a87bf5706d1f",
+"@odata.type": "#Session.v1_0_0.Session",
+"ID": "1e0492f8-112d-4f9a-8102-a87bf5706d1f",
+"Description": "Manager Bruce Session",
+"Name": "Bruce Session",
+"Oem":{},
+"UserName": "abc"
+}
+</code></pre><h2 id='deleting-a-session'>Deleting a session</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>DELETE</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/SessionService/Sessions/{sessions id}</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>DELETE method on this endpoint is used to terminate a specific Redfish session when the user logs out.</td>
+</tr>
+<tr>
+<td><strong>Authentication</strong></td>
+<td>X-AUTH-TOKEN Authorization or Basic Authorization.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200</code> on success</td>
+</tr>
+</tbody></table>
+
+<p><br>
+<strong>NOTE:</strong>
+- A user with <code>operator</code> privileges can delete a session using the Session ID and the X-AUTH-TOKEN that they created.
+- A user with <code>admin</code> privileges can delete any active session.</p>
+<pre class="highlight plaintext"><code>curl --insecure -X DELETE \
+-H 'Accept:application/json' \
+-H "X-Auth-Token:{X-Auth-Token}" \
+'https://FODIM_IP_address/redfish/v1/SessionService/Sessions/{session id}'
+
+
+</code></pre>
+<blockquote>
+<p><strong>Sample response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Cache-Control:  no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"16B6EF53"
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   Thu, 12 Sep 2019 19:40:08 GMT+6m 2s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>none
+</code></pre><h1 id='configuring-roles-and-privileges-for-a-user'>Configuring roles and privileges for a user</h1>
+<p>The FODIM API supports role-based authorization of requests - the roles and privileges control which users have what access to resources.</p>
+<h2 id='roles'>Roles</h2>
+<p>A role represents a set of operations that a user is allowed to perform and is determined by a defined set of privileges. The privileges of a role are configurable - you can choose a privilege or a set of privileges to assign to a role at the time of role creation.</p>
+
+<p>See <a href="#create_a_role">Creating a role</a>.</p>
+
+<p>With FODIM, there are two kinds of defined roles:</p>
+
+<ul>
+<li><p><strong>Redfish pre-defined roles</strong></p>
+
+<p>Redfish pre-defined roles come with a pre-defined set of privileges. You can assign additional OEM privileges.
+Following are the Redfish pre-defined roles:</p>
+
+<ul>
+<li>  Administrator</li>
+<li>  Operator</li>
+<li>  ReadOnly</li>
+</ul></li>
+<li><p><strong>OEM(Original Equipment Manufacturer) roles</strong></p>
+
+<p>OEM roles are the custom roles that you can create and assign to a user. Following are the available OEM roles:</p>
+
+<ul>
+<li>   admin
+:   The admin is an OEM pre-defined role that has all the privileges needed to manage all services. The admin can perform any actions such as adding and removing equipments, adding or removing users or privileges, and so on.</li>
+<li>   client
+:   The client is an OEM role that uses the northbound APIs to manage the southbound infrastructure.</li>
+<li>   monitor
+:   The Monitor is an OEM role that is used typically by northbound monitoring solutions, this user role performs actions such as setting up subscriptions to be notified on Alerts from southbound infrastructure.</li>
+</ul></li>
+</ul>
+
+<p><strong>NOTE:</strong></p>
+
+<p>Every user is assigned one role at the time of user account creation; ensure that an OEM role is created before assigning it to a user at the time of user account creation.</p>
+<h2 id='privileges'>Privileges</h2>
+<p>A privilege is a permission to perform an operation or a set of operations within a defined management domain. There are Redfish specified set of privileges as well as OEM-defined privileges.</p>
+
+<p>The following privileges can be assigned to any user in FODIM:</p>
+
+<ul>
+<li><p>ConfigureComponents
+:   Users with this privilege can configure components managed by the services in FODIM Redfish API.</p></li>
+<li><p>ConfigureManager
+:   Users with this privilege can configure manager resources.</p></li>
+<li><p>ConfigureSelf
+:   Users with this privilege can change the password for their account.</p></li>
+<li><p>ConfigureUsers
+:   Users with this privilege can configure users and their accounts. This privilege is assigned to an administrator.</p></li>
+<li><p>Login
+:   Users with this privilege can log into the service and read the resources.</p></li>
+</ul>
+
+<p><strong>NOTE:</strong></p>
+
+<p>The privileges set for a Redfish pre-defined role cannot be modified.</p>
+<h2 id='mapping-of-privileges-to-roles-in-the-fodim-api'>Mapping of privileges to roles in the FODIM API</h2>
+<table><thead>
+<tr>
+<th>Roles</th>
+<th>Assigned privileges</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Administrator (Redfish pre-defined)</td>
+<td>-   Login<br>-   ConfigureManager<br>-   ConfigureUsers<br>-   ConfigureComponents<br>-   ConfigureSelf<br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Operator (Redfish pre-defined)</td>
+<td>-   Login<br>-   ConfigureComponents<br>-   ConfigureSelf<br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ReadOnly (Redfish pre-defined)</td>
+<td>-   Login<br>-   ConfigureSelf<br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>admin (OEM)</td>
+<td></td>
+</tr>
+<tr>
+<td>client (OEM)</td>
+<td></td>
+</tr>
+<tr>
+<td>monitor (OEM)</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='creating-a-role'>Creating a role</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>POST</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Roles</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>This operation creates a role that will be used by the AccountService to create a user account.</td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>201 Created</code> on success</td>
+</tr>
+</tbody></table>
+
+<p><strong>NOTE:</strong></p>
+
+<p>Only a user with <code>ConfigureUsers</code> privilege can perform this operation.</p>
+<pre class="highlight plaintext"><code>curl --insecure -X POST \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -H "Content-Type:application/json" \
+   -d \
+'{
+  "id": "{SomeRole}",
+  "AssignedPrivileges": [{Set_of_Redfish_privileges}],
+  "OemPrivileges": [{Set_of_OEM_privileges}]
+}' \
+ 'https://{FODIM_IP_address}/redfish/v1/AccountService/Roles'
+
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Request body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+  "id": "ADMIN",
+  "AssignedPrivileges": ["Login","ConfigureManager","ConfigureUsers","ConfigureSelf","ConfigureComponents"],
+  "OemPrivileges": []
+}
+</code></pre><h3 id='request-uri-parameters-2'>Request URI parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>User name for the user account.</td>
+</tr>
+<tr>
+<td>AssignedPrivileges</td>
+<td>array (string (enum))</td>
+<td>The redfish privileges that this role includes. See <a href="#">FODIM Redfish API User roles and Privileges</a></td>
+</tr>
+<tr>
+<td>OemPrivileges</td>
+<td>array (string)</td>
+<td>The OEM privileges that this role includes. See <a href="#">FODIM Redfish API User roles and Privileges</a></td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Allow:  "GET", "DELTE", "PATCH", "HEAD"
+Cache-Control:  no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"12345"
+Link:   /v1/SchemaStore/en/ManagerAccount.json/&gt;; rel=describedby
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   Fri, 13 Sep 2019 09:22:57 GMT+6m 38s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"@odata.context": "/redfish/v1/$metadata#ManagerAccount.ManagerAccount",
+"@odata.etag": "W/\"12345\"",
+"@odata.id": "/redfish/v1/AccountService/Accounts/admin/",
+"@odata.type": "#ManagerAccount.v1_1_3.ManagerAccount",
+"UserName": "admin",
+"RoleID": "ADMIN",
+"Password": null,
+"ID": "admin",
+"Name": "User Account",
+"Description": "Bruce user account",
+"Links":{
+"Role":{
+"@odata.id": "/redfish/v1/AccountService/Roles/ADMIN/"
+}
+},
+"Oem":{}
+}
+</code></pre><h2 id='listing-roles'>Listing roles</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Roles</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>GET on this endpoint retrieves a list of user roles.</td>
+</tr>
+<tr>
+<td>Returns</td>
+<td>Links to user role resources.</td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+
+<p><strong>NOTE:</strong></p>
+
+<p>Only a user with <code>ConfigureUsers</code> privileges can perform this operation.</p>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/redfish/v1/AccountService/Roles'
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Allow:  "GET"
+Cache-Control:  no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"12345"
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   Thu, 22 Aug 2019 23:25:18 GMT+6m 30s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"@odata.type": "#RoleCollection.RoleCollection",
+"Name": "Roles Collection",
+"Members@odata.count": 10,
+"Members":[
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/Administrator"
+            },
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/ADMIN"
+            },
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/monitor3"
+            },
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/ADMIN"
+            },
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/ADMIN"
+            },
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/ReadOnly"
+            },
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/ADMIN"
+            },
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/Operator"
+            },
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/RoleM"
+            },
+                    {
+                    "@odata.id": "/redfish/v1/AccountService/Roles/ADMIN"
+            }
+],
+"@odata.context": "/redfish/v1/$metadata#RoleCollection.RoleCollection",
+"@odata.id": "/redfish/v1/AccountService/Roles"
+}
+</code></pre><h2 id='getting-information-about-a-role'>Getting information about a role</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Roles/{Role Id}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A specific user role.</td>
+</tr>
+<tr>
+<td>Returns</td>
+<td>Details of this role like Id, name, assigned privileges, and more.</td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/redfish/v1/AccountService/Roles/{Role Id}'
+
+
+</code></pre>
+<p><strong>NOTE:</strong></p>
+
+<p>Replace <code>{Role Id}</code> with the user role Id created from role creation.</p>
+
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Allow:  "GET"
+Cache-Control:  no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"12345"
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   Thu, 22 Aug 2019 23:25:18 GMT+6m 30s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"@odata.type": "#Role.v1_2_3.Role",
+"Id": "monitor3",
+"Name": "User Role",
+"Description": "monitor3 User Role",
+"IsPredefined": false,
+"AssignedPrivileges":[
+                    "Login",
+                    "ConfigureUsers"
+],
+"OemPrivileges": null,
+"@odata.context": "/redfish/v1/$metadata#Role.Role",
+"@odata.id": "/redfish/v1/AccountService/Roles/monitor3"
+}
+</code></pre><h2 id='updating-a-role'>Updating a role</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>PATCH</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Roles/{Role Id}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>PATCH method on this endpoint updates privileges of a specific user role.</td>
+</tr>
+<tr>
+<td>Returns</td>
+<td>Details of this role with updated privileges.</td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code> curl --insecure -X PATCH \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -H "Content-Type:application/json" \
+   -d \
+'{
+  "AssignedPrivileges": [{Set_Of_Privileges_to_update}],
+  "OemPrivileges": []
+}' \
+ 'https://{FODIM_IP_address}/redfish/v1/AccountService/Roles/{Role Id}'
+
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>status:200
+allow:"GET"cache-control:no-cache
+content-type:application/json; charset=utf-8
+etag:W/"12345"odata-version:4.0
+x-frame-options:sameorigin
+content-length:328 bytes
+date:Tue,
+12 Nov 2019 11:12:41 GMT+1m 50s
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.type":"#Role.v1_2_3.Role",
+   "Id":"role2",
+   "Name":"User Role",
+   "Description":"role2 User Role",
+   "IsPredefined":false,
+   "AssignedPrivileges":[ 
+      "Login",
+      "ConfigureManager",
+      "ConfigureUsers",
+      "ConfigureSelf"
+   ],
+   "OemPrivileges":null,
+   "@odata.context":"/redfish/v1/$metadata#Role.Role",
+   "@odata.id":"/redfish/v1/AccountService/Roles/role2"
+}
+</code></pre><h2 id='deleting-a-role'>Deleting a role</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>DELETE</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Roles/{Role Id}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>DELETE method on this endpoint deletes a specific user role.</td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X DELETE \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/redfish/v1/AccountService/Roles/{Role Id}'
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Cache-Control:  
+no-cache
+Connection: keep-alive
+Etag:   W/"12345"
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   Wed, 18 Sep 2019 12:12:27 GMT+6m 41s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>none
+</code></pre><h1 id='creating-and-managing-user-accounts'>Creating and managing user accounts</h1>
+<p>The FODIM API allows users to have accounts to configure their actions and restrictions. </p>
+
+<p>A user other than <code>admin</code> needs to create an account by defining a user name, a password, and a role. The username and the password are used to establish a login session with the Redfish services later.</p>
+
+<p>It exposes Redfish AccountsService APIs to manage user accounts. Use these endpoints to perform the following operations:</p>
+
+<ul>
+<li><p>Creating, modifying, and deleting account details.</p></li>
+<li><p>Fetching account details.</p></li>
+</ul>
+<h3 id='supported-apis'><strong>Supported APIs</strong>:</h3>
+<ul>
+<li><p><code>/redfish/v1/AccountService</code></p></li>
+<li><p><code>/redfish/v1/AccountService/Accounts</code></p></li>
+<li><p><code>/redfish/v1/AccountService/Accounts/{Account Id}</code></p></li>
+<li><p><code>/redfish/v1/AccountService/Roles</code></p></li>
+<li><p><code>/redfish/v1/AccountService/Roles/{Role id}</code></p></li>
+</ul>
+<h2 id='creating-an-account'>Creating an account</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>POST</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Accounts</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>POST method on this endpoint creates a user account.</td>
+</tr>
+<tr>
+<td>Returns</td>
+<td>A <code>Location</code> header that contains a link to the newly created account.<br>The JSON response body containing the properties of the created account.<br></td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>201 Created</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X POST \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -d \
+'{"Username":"{username}","Password":"{password}","RoleId":"{roleId}"}
+' \
+ 'https://{FODIM_IP_address}/redfish/v1/AccountService/Accounts'
+
+
+</code></pre><h3 id='request-uri-parameters-3'>Request URI parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Username</td>
+<td>string</td>
+<td>User name for the user account.</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>string</td>
+<td>Password for the user account. See &quot;Password Requirements&quot; section below.</td>
+</tr>
+<tr>
+<td>RoleId</td>
+<td>string</td>
+<td>The Role for this account. See <a href="#">FODIM Redfish API User roles and Privileges</a></td>
+</tr>
+</tbody></table>
+<h3 id='password-requirements'>Password Requirements</h3>
+<ul>
+<li><p>Your password must not be same as your username.</p></li>
+<li><p>Your password must be at least 12 characters long and at most 16 characters long. However, this length restriction is configurable.</p></li>
+<li><p>Your password must contain at least one uppercase letter, one lowercase letter, one digit (0-9), and one special character.</p></li>
+</ul>
+
+<blockquote>
+<p><strong>Sample Request body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"Username": "test5",
+"Password": "test123",
+"RoleId": "MONITOR"
+}
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Cache-Control:  
+no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"12345"
+Link:   /v1/AccountService/Accounts/test5/&gt;; rel=describedby
+**Location: /redfish/v1/AccountService/Accounts/test5/**
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   
+Tue, 17 Sep 2019 10:52:41 GMT+6m 41s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"@odata.context": "/redfish/v1/$metadata#ManagerAccount.ManagerAccount",
+"@odata.etag": "W/\"12345\"",
+"@odata.id": "/redfish/v1/AccountService/Accounts/test5/",
+"@odata.type": "#ManagerAccount.v1_1_3.ManagerAccount",
+"UserName": "test",
+"RoleID": "MONITOR",
+"Password": null,
+"ID": "test",
+"Name": "User Account",
+"Description": "Bruce user account",
+"Links":{
+"Role":{
+"@odata.id": "/redfish/v1/AccountService/Roles/MONITOR/"
+}
+},
+"Oem":{}
+}
+</code></pre><h2 id='listing-user-accounts'>Listing user accounts</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Accounts</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>This endpoint retrieves a list of user accounts.</td>
+</tr>
+<tr>
+<td>Returns</td>
+<td>Links to user account resources.</td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/v1/AccountService/Accounts'
+
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Allow:  "GET", "POST", "HEAD"
+Cache-Control:  no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"12345"
+Link:   /v1/SchemaStore/en/ManagerAccountCollection.json/&gt;; rel=describedby
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   Fri, 13 Sep 2019 08:28:47 GMT-43m 57s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"@odata.context": "/redfish/v1/$metadata#ManagerAccountCollection.ManagerAccountCollection",
+"@odata.etag": "W/\"12345\"",
+"@odata.id": "/redfish/v1/AccountService/Accounts/",
+"@odata.type": "#ManagerAccountCollection.ManagerAccountCollection",
+"Name": "Accounts ",
+"Description": "Bruce User Accounts",
+"Members@odata.count": 2,
+"Members":[
+{
+"@odata.id": "/redfish/v1/AccountService/Accounts/monitor1/"
+},
+{
+"@odata.id": "/redfish/v1/AccountService/Accounts/admin/"
+}
+]
+}
+</code></pre><h2 id='getting-single-account-information'>Getting single account information</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Accounts/{accountId}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A specific user account.</td>
+</tr>
+<tr>
+<td>Returns</td>
+<td>Details of this user account.</td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/v1/AccountService/Accounts/{accountId}'
+
+
+</code></pre>
+<p><strong>NOTE:</strong></p>
+
+<p>Replace <code>{accountId}</code> with the username for the account whose details you want to fetch.</p>
+
+<blockquote>
+<p>** Sample Response header**</p>
+</blockquote>
+<pre class="highlight plaintext"><code>Allow:  "GET", "DELTE", "PATCH", "HEAD"
+Cache-Control:  no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"12345"
+Link:   /v1/SchemaStore/en/ManagerAccount.json/&gt;; rel=describedby
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   Fri, 13 Sep 2019 09:22:57 GMT+6m 38s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"@odata.context": "/redfish/v1/$metadata#ManagerAccount.ManagerAccount",
+"@odata.etag": "W/\"12345\"",
+"@odata.id": "/redfish/v1/AccountService/Accounts/admin/",
+"@odata.type": "#ManagerAccount.v1_1_3.ManagerAccount",
+"UserName": "admin",
+"RoleID": "ADMIN",
+"Password": null,
+"ID": "admin",
+"Name": "User Account",
+"Description": "Bruce user account",
+"Links":{
+"Role":{
+"@odata.id": "/redfish/v1/AccountService/Roles/ADMIN/"
+}
+},
+"Oem":{}
+}
+</code></pre><h2 id='updating-an-account'>Updating an account</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>PATCH</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Accounts/{accountId}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>PATCH method on this endpoint updates user account details such as username, password, and RoleId.</td>
+</tr>
+<tr>
+<td>Returns</td>
+<td>Message in the JSON response body saying that the account is modified.</td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X PATCH \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -H "Content-Type:application/json" \
+   -d \
+'{
+"Password": "{new_password}"
+}
+' \
+ 'https://{FODIM_IP_address}/redfish/v1/AccountService/Accounts/{accountId}'
+
+</code></pre>
+<p><strong>NOTE:</strong></p>
+
+<ul>
+<li><p>Replace <code>{accountId}</code> with the username for the account whose details you want to update.</p></li>
+<li><p>Add the account details (username, password, and RoleId) to be modified in the request payload.</p></li>
+</ul>
+
+<blockquote>
+<p><strong>Sample Request body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"Password": "test12",
+"RoleId": "MONITOR"
+}
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Cache-Control:  
+no-cache
+Connection: keep-alive
+Content-Type:   application/json; charset=utf-8
+Etag:   W/"12345"
+Link:   /v1/AccountService/Accounts/test6/&gt;; rel=describedby
+Location:   /redfish/v1/AccountService/Accounts/test6/
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   
+Wed, 18 Sep 2019 08:42:05 GMT+6m 41s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>BODY
+pretty 
+{
+"error":{
+"code": "iLO.0.10.ExtendedInfo",
+"message": "See @Message.ExtendedInfo for more information.",
+"@Message.ExtendedInfo":[
+{
+"MessageId": "Base.1.0.AccountModified"
+}
+]
+}
+</code></pre><h2 id='deleting-an-account'>Deleting an account</h2>
+<table><thead>
+<tr>
+<th>Method</th>
+<th><code>DELETE</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>URI</td>
+<td><code>/redfish/v1/AccountService/Accounts/{accountId}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>DELETE method on this endpoint deletes a user account.</td>
+</tr>
+<tr>
+<td>Response Code</td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl  --insecure -X DELETE \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/redfish/v1/AccountService/Accounts/{accountId}'
+
+</code></pre>
+<p><strong>NOTE:</strong></p>
+
+<p>Replace <code>{accountId}</code> with the username for the account which you want to delete.</p>
+
+<blockquote>
+<p><strong>Sample Response header</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>Cache-Control:  
+no-cache
+Connection: keep-alive
+Etag:   W/"12345"
+Odata-Version:  4.0
+X-Frame-Options:    sameorigin
+Date:   
+Wed, 18 Sep 2019 08:52:30 GMT+6m 41s
+Transfer-Encoding:  chunked
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>none
+</code></pre><h1 id='aggregating-and-managing-southbound-infrastructure'>Aggregating and managing southbound infrastructure</h1>
+<p>One of the state-of-the-art features of the FODIM API is that it allows users to add and group southbound infrastructure(servers, storage devices, or fabrics) into one aggregate for easy manageability. It offers Redfish AggregationService as an interface and exposes endpoints to achieve the following:</p>
+
+<ul>
+<li><p>Adding a resource to manage and constructing its detailed inventory.</p></li>
+<li><p>Resetting one or more resources.</p></li>
+<li><p>Changing the boot path of one or more resources to default settings.</p></li>
+<li><p>Removing a resource and its inventory.</p></li>
+</ul>
+
+<p>Using these endpoints, you can add or remove only one resource at a time. You can group the resources into one collection and perform actions such as reset and setdefaultbootorder in combination on that group.</p>
+
+<p>All aggragation actions are performed as tasks in the FODIM API. The actions performed on a group of resources(resetting or changing the boot order to default settings) are carried out as a set of sub-tasks.</p>
+
+<p>The next section contains the use case for server aggregation.</p>
+<h3 id='prerequisites'>Prerequisites</h3>
+<ul>
+<li>  To access Redfish AggregationService endpoints, ensure that the user has <code>ConfigureComponents</code> privilege.</li>
+</ul>
+<h3 id='supported-endpoints'>Supported Endpoints</h3>
+<ul>
+<li><p><code>/redfish/v1/AggregatorService/Actions/AggregationService.Add</code></p></li>
+<li><p><code>/redfish/v1/AggregatorService/Actions/AggregationService.Remove</code></p></li>
+<li><p><code>/redfish/v1/AggregationService/Actions/AggregationService.Reset</code></p></li>
+<li><p><code>/redfish/v1/AggregationService/Actions/AggregationService.SetDefaultBootOrder</code></p></li>
+</ul>
+<h2 id='the-aggregation-service-root'>The aggregation service root</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>redfish/v1/AggregationService</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>The URI for the Aggregation service root.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Properties for the service and a list of actions you can perform using this service.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl -i --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/redfish/v1/AggregationService'
+
+
+</code></pre>
+<blockquote>
+<p>Sample response header </p>
+</blockquote>
+<pre class="highlight plaintext"><code>allow:  GET
+cache-control:  no-cache
+content-length: 1 kilobytes
+content-type:   application/json; charset=utf-8
+date:   Mon, 18 Nov 2019 14:52:21 GMT+5h 37m
+etag:   W/"12345"
+link:   /v1/SchemaStore/en/AggregationService.json&gt;; rel=describedby
+odata-version:  4.0
+status: 200
+x-frame-options:    sameorigin
+
+</code></pre>
+<blockquote>
+<p>Sample response body </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.context":"/redfish/v1/$metadata#AggregationService.AggregationService",
+   "@odata.etag":"W/\"979B45E7\"",
+   "Id":"AggregationService",
+   "@odata.id":"/redfish/v1/AggregationService",
+   "@odata.type":"#AggregationService.v1_0_0.AggregationService",
+   "Name":"AggregationService",
+   "Description":"AggregationService",
+   "Actions":{ 
+      "#AggregationService.Add":{ 
+         "target":"/redfish/v1/AggregationService/Actions/AggregationService.Add/",
+         "@Redfish.ActionInfo":"/redfish/v1/AggregationService/AddActionInfo"
+      },
+      "#AggregationService.Remove":{ 
+         "target":"/redfish/v1/AggregationService/Actions/AggregationService.Remove/",
+         "@Redfish.ActionInfo":"/redfish/v1/AggregationService/RemoveActionInfo"
+      },
+      "#AggregationService.Reset":{ 
+         "target":"/redfish/v1/AggregationService/Actions/AggregationService.Reset/",
+         "@Redfish.ActionInfo":"/redfish/v1/AggregationService/ResetActionInfo"
+      },
+      "#AggregationService.SetDefaultBootOrder":{ 
+         "target":"/redfish/v1/AggregationService/Actions/AggregationService.SetDefaultBootOrder/",
+         "@Redfish.ActionInfo":"/redfish/v1/AggregationService/SetDefaultBootOrderActionInfo"
+      }
+   },
+   "ServiceEnabled":true,
+   "Status":{ 
+      "Health":"OK",
+      "HealthRollup":"OK",
+      "State":"Enabled"
+   }
+}
+</code></pre><h1 id='use-case-for-server-aggregation'>Use case for server aggregation</h1><h2 id='adding-a-server'>Adding a server</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>POST</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/AggregatorService/Actions/AggregationService.Add</code></td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Location URI of the task monitor associated with this operation in the response header.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>202</code> on success</td>
+</tr>
+</tbody></table>
+<h3 id='description'>Description</h3>
+<p>This action adds a single server and performs a detailed inventory of it.
+On success, ORCA specified <code>Computer System Id</code> is assigned to the added server.</p>
+
+<p><strong>NOTE:</strong></p>
+
+<p>Make note of the <code>Computer System Id</code>. You will need this to perform subsequent actions such as delete, reset, and setdefaultbootorder on this server.</p>
+<pre class="highlight plaintext"><code>curl -i --insecure -X POST \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -H "Content-Type:application/json" \
+   -d \
+'{"ManagerAddress":"{Server_IP_Address}","UserName":"{Account_UserName}","Password":"{Account_Password}","Oem":{"PluginID":"{Redfish_PluginId}"}}' \
+ 'https://{FODIM_IP_address}/redfish/v1/AggregationService/Actions/AggregationService.Add'
+
+
+</code></pre>
+<blockquote>
+<p>Sample request body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+    "ManagerAddress": "10.24.0.6",
+    "Username": "username",
+    "Password": "password",
+    "Oem": {
+        "PluginID": "GRF"
+    }
+}
+</code></pre><h3 id='request-parameters'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ManagerAddress</td>
+<td></td>
+<td>A valid IP address or hostname of a baseboard management controller (BMC)</td>
+</tr>
+<tr>
+<td>Username</td>
+<td>string</td>
+<td>The username for this user account</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>string</td>
+<td>The password for this user account</td>
+</tr>
+<tr>
+<td>PluginID</td>
+<td>string</td>
+<td>The plugin id Example : GRF (Generic Redfish Plugin)<br></td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Sample response header</p>
+</blockquote>
+<pre class="highlight plaintext"><code>content-length:0 byte
+content-type:application/json; charset=utf-8
+date:Thu,
+07 Nov 2019 09:29:36 GMT+7m 8s
+**location:/taskmon/taskb297ff4e-0d2d-485c-8217-63d888cba7d2**
+odata-version:4.0
+status:202
+x-frame-options:sameorigin
+</code></pre>
+<blockquote>
+<p>Sample response body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>None
+</code></pre><h2 id='knowing-the-addition-status'>Knowing the addition status</h2>
+<p>To know the status of the progress of this action, perform <code>GET</code> on the URI of the task monitor returned in the <code>Location</code> header. </p>
+
+<ul>
+<li><p>If the task is still running, you will receive the following information in the JSON response indicating that the task is yet to complete:</p>
+
+<ul>
+<li>Task state as &quot;Running&quot;</li>
+<li>percentage of completion</li>
+</ul></li>
+<li><p>If the task is complete(server is successfully added in the inventory), you will receive a link to the added server in the <code>Location</code> header and in the response body as well.</p></li>
+</ul>
+
+<blockquote>
+<p>Sample header: when the task status is running </p>
+</blockquote>
+<pre class="highlight plaintext"><code>status:202
+allow:"GET"cache-control:no-cache
+content-type:application/json; charset=utf-8
+date:Wed,04 Dec 2019 12:30:59 GMT+5h 37m
+etag:W/"12345"
+location:/taskmon/taskac4d5b78-9ba8-46b4-b69b-0f3580aec2c2
+odata-version:4.0
+x-frame-options:sameorigin
+content-length:691 bytes
+</code></pre>
+<blockquote>
+<p>Sample response body: when the task is running</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.type":"#Task.v1_3_0.Task",
+   "Id":"taskac4d5b78-9ba8-46b4-b69b-0f3580aec2c2",
+   "Name":"Task taskac4d5b78-9ba8-46b4-b69b-0f3580aec2c2",
+   "Description":"",
+   "TaskState":"Running",
+   "StartTime":"2019-12-04 12:30:52.222338243 +0530 IST",
+   "EndTime":"0001-01-01 00:00:00 +0000 UTC",
+   "TaskStatus":"OK",
+   "SubTasks":"/redfish/v1/Tasks/taskac4d5b78-9ba8-46b4-b69b-0f3580aec2c2/SubTasks",
+   "TaskMonitor":"/taskmon/taskac4d5b78-9ba8-46b4-b69b-0f3580aec2c2",
+   "PercentComplete":4,
+   "Payload":{ 
+      "HttpHeaders":null,
+      "HttpOperation":"",
+      "JsonBody":null,
+      "TargetUri":""
+   },
+   "Messages":null,
+   "@odata.context":"/redfish/v1/$metadata#Task.Task",
+   "@odata.id":"/redfish/v1/TaskService/Tasks/taskac4d5b78-9ba8-46b4-b69b-0f3580aec2c2"
+}
+</code></pre>
+<blockquote>
+<p>Sample header: when the task  is complete</p>
+</blockquote>
+<pre class="highlight plaintext"><code>content-length:74 bytes
+content-type:application/json; charset=utf-8
+date:Wed,
+04 Dec 2019 06:48:14 GMT+7m 42s
+location:/redfish/v1/Systems/bffb4a1b-0d19-4531-ba44-0ac83c77579d:1
+odata-version:4.0
+status:201
+x-frame-options:sameorigin
+</code></pre>
+<blockquote>
+<p>Sample response body: when the task status is complete</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.id":"/redfish/v1/Systems/bffb4a1b-0d19-4531-ba44-0ac83c77579d:1"
+}
+</code></pre><h2 id='resetting-one-or-more-servers'>Resetting one or more servers</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>POST</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/AggregatorService/Actions/AggregationService.Reset</code></td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Location URI of the task monitor associated with this operation in the response header.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>202</code> on success</td>
+</tr>
+</tbody></table>
+<h3 id='description-2'>Description</h3>
+<p>This action shuts down, powers up, and restarts one or more servers.</p>
+
+<p>You can perform reset on a group of servers by specifying multiple target URIs in the request.</p>
+<pre class="highlight plaintext"><code>  curl -i --insecure -X POST \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -H "Content-Type:application/json" \
+   -d \
+'{
+"@Redfish.Copyright": "Copyright 2018-2019 DMTF. All rights reserved.",
+"@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+"@odata.id": "/redfish/v1/AggregationService/ResetActionInfo",
+"@odata.type": "#ActionInfo.v1_0_3.ActionInfo",
+"Id": "AddActionInfo",
+"Name": "Reset Action Info",
+
+ "Oem": {
+
+  },
+
+"parameters": {
+"ResetCollection": {
+"description": "Collection of ResetTargets",
+"ResetTarget": [{
+"ResetType": "ForceRestart",
+"TargetUri": "/redfish/v1/Systems/{ComputerSystemId}"
+},
+{
+"ResetType": "ForceOff",
+"TargetUri": "/redfish/v1/Systems/{ComputerSystemId}"
+}
+]
+}
+}
+}' \
+ 'https://{FODIM_IP_address}/redfish/v1/AggregationService/Actions/AggregationService.Reset'
+
+
+</code></pre>
+<blockquote>
+<p>Sample request body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@Redfish.Copyright":"Copyright 2018-2019 DMTF. All rights reserved.",
+   "@odata.context":"/redfish/v1/$metadata#ActionInfo.ActionInfo",
+   "@odata.id":"/redfish/v1/AggregationService/ResetActionInfo",
+   "@odata.type":"#ActionInfo.v1_0_3.ActionInfo",
+   "Id":"AddActionInfo",
+   "Name":"Reset Action Info",
+   "Oem":{ 
+
+   },
+   "parameters":{ 
+      "ResetCollection":{ 
+         "description":"Collection of ResetTargets",
+         "ResetTarget":[ 
+            { 
+               "ResetType":"ForceRestart",
+               "TargetUri":"/redfish/v1/Systems/f0c61692-a8dc-46ce-b85c-bf4753c3abdf:1"
+            },
+            { 
+               "ResetType":"ForceOff",
+               "TargetUri":"/redfish/v1/Systems/24b243cf-f1e3-5318-92d9-2d6737d6b0b9:1"
+            }
+         ]
+      }
+   }
+}
+
+</code></pre><h3 id='request-parameters-2'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>@odata.context</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters section.</td>
+</tr>
+<tr>
+<td>@odata.id</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters section.</td>
+</tr>
+<tr>
+<td>@odata.type</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters section.</td>
+</tr>
+<tr>
+<td>Id</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters section.</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters section.</td>
+</tr>
+<tr>
+<td>Oem</td>
+<td>object</td>
+<td>Refer to Common Redfish Schema parameters section.</td>
+</tr>
+<tr>
+<td>parameters[ {</td>
+<td>array</td>
+<td>The parameters associated with the Reset Action.</td>
+</tr>
+<tr>
+<td>ResetType</td>
+<td>string</td>
+<td>The type of reset to be performed. See &quot;Reset Type&quot; section below, for the possible values of this property.</td>
+</tr>
+<tr>
+<td>TargetUri } ]</td>
+<td>string</td>
+<td>The URI of the target for Reset - <code>&quot;/redfish/v1/Systems/&lt;ComputerSystemId&gt;&quot;</code></td>
+</tr>
+</tbody></table>
+<h3 id='reset-type'>Reset Type</h3>
+<table><thead>
+<tr>
+<th>string</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ForceOff</td>
+<td>Turn the unit off immediately (non-graceful shutdown).</td>
+</tr>
+<tr>
+<td>ForceOn</td>
+<td>Turn the unit on immediately.</td>
+</tr>
+<tr>
+<td>ForceRestart</td>
+<td>Perform an immediate (non-graceful) shutdown, followed by a restart.</td>
+</tr>
+<tr>
+<td>GracefulRestart</td>
+<td>Perform a graceful shutdown followed by a restart of the system.</td>
+</tr>
+<tr>
+<td>GracefulShutdown</td>
+<td>Perform a graceful shutdown. Graceful shutdown involves shutdown of the operating system followed by the power off of the physical server.</td>
+</tr>
+<tr>
+<td>Nmi</td>
+<td>Generate a Diagnostic Interrupt (usually an NMI on x86 systems) to cease normal operations, perform diagnostic actions and typically halt the system.</td>
+</tr>
+<tr>
+<td>On</td>
+<td>Turn the unit on.</td>
+</tr>
+<tr>
+<td>PowerCycle</td>
+<td>Perform a power cycle of the unit.</td>
+</tr>
+<tr>
+<td>PushPowerButton</td>
+<td>Simulate the pressing of the physical power button on this unit.</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Sample Response header</p>
+</blockquote>
+<pre class="highlight plaintext"><code>content-length: 0 byte
+content-type:   application/json; charset=utf-8
+date:   Fri, 08 Nov 2019 07:49:42 GMT+7m 9s
+location:   /taskmon/taska9702e20-884c-41e2-bd9c-d779a4dd2e6e
+odata-version:  4.0
+status: 202
+x-frame-options:    sameorigin
+</code></pre>
+<blockquote>
+<p>Sample response body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>None
+</code></pre><h2 id='knowing-the-reset-status'>Knowing the reset status</h2>
+<p>Resetting a group of servers is carried out as a set of sub-tasks: each sub-task resets a single server in the group.  </p>
+
+<p>Perform <code>GET</code> on the URI of the task monitor returned in the <code>Location</code> header.</p>
+
+<ul>
+<li><p>If the task is yet to complete, you will receive the following information in the response body:</p>
+
+<ul>
+<li>An HTTP <code>202 Accepted</code> response.</li>
+<li>Link to the list of sub-tasks associated with this group of servers. Perform <code>GET</code> on an individual <code>sub-task</code> link to know the status of the reset action on the respective server.</li>
+<li>Task status as &quot;running&quot;.</li>
+</ul></li>
+<li><p>In case of errors, you will receive the following information:</p>
+
+<ul>
+<li>HTTP error code </li>
+<li>Error Message having a link to the main reset task in the response body.
+Copy this link and perform <code>GET</code> to view the list of sub-tasks. To know which sub-tasks have failed, perform <code>GET</code> on the links individually.</li>
+</ul></li>
+<li><p>If all the servers are successfully reset, you will receive an HTTP <code>200 OK</code> response and a success message in the response body.</p></li>
+</ul>
+
+<blockquote>
+<p><strong>Sample response header: when the task is complete</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>cache-control:  no-cache
+content-length: 469 bytes
+content-type:   application/json; charset=utf-8
+date:   Mon, 18 Nov 2019 09:42:45 GMT+7m 22s
+etag:   W/"12345"
+odata-version:  4.0
+status: 200
+x-frame-options: sameorigin
+</code></pre>
+<blockquote>
+<p><strong>Sample response body: when the task is complete</strong></p>
+</blockquote>
+<pre class="highlight plaintext"><code>  { 
+   "error":{ 
+      "code":"Base.1.0.Success",
+      "message":"An error has occurred. See ExtendedInfo for more information.",
+      "@Message.ExtendedInfo":[ 
+         { 
+            "@odata.type":"#Message.v1_0_6.Message",
+            "MessageId":"Base.1.0.Success",
+            "Message":"default error message all reset actions are successfully completed. for more information please check SubTasks in URI: /redfish/v1/TaskService/Tasks/task87f5825f-db3b-40f7-af07-d8d5781245cd",
+            …
+         }
+      ]
+   }
+}
+</code></pre>
+<blockquote>
+<p>**Sample response body in case of a failure</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "error":{ 
+      "code":"Base.1.0.Success",
+      "message":"An error has occurred. See ExtendedInfo for more information.",
+      "@Message.ExtendedInfo":[ 
+         { 
+            "@odata.type":"#Message.v1_0_6.Message",
+            "MessageId":"Base.1.0.Success",
+            "Message":"default error message one or more of the reset actions failed. for more information please check SubTasks in URI: /redfish/v1/TaskService/Tasks/taskb8ab3688-1d1f-4143-abcc-fe05b0fbac79",
+            …
+         }
+      ]
+   }
+}
+</code></pre><h2 id='changing-the-boot-order-of-a-set-of-servers-to-default-settings'>Changing the boot order of a set of servers to default settings</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>POST</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/AggregatorService/Actions/AggregationService.SetDefaultBootOrder</code></td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Location URI of the Task Monitor associated with this operation in the response header.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>202 Accepted</code> on success</td>
+</tr>
+</tbody></table>
+<h3 id='description-3'>Description</h3>
+<p>This action changes the boot order of one or more servers to default settings.</p>
+
+<p>You can perform setDefaultBootOrder on a group of servers by specifying multiple server URIs in the request.</p>
+<pre class="highlight plaintext"><code>curl -i --insecure -X POST \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -H "Content-Type:application/json" \
+   -d \
+'{ 
+
+"@Redfish.Copyright": "Copyright 2018-2019 DMTF. All rights reserved.", 
+
+ "@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo", 
+
+ "@odata.id": "/redfish/v1/AggregationService/SetDefaultBootOrderActionInfo", 
+
+                 "@odata.type": "#ActionInfo.v1_0_3.ActionInfo", 
+
+                 "Id": "AddActionInfo", 
+
+                 "Name": "SetDefaultBootOrder Action Info", 
+
+                  "parameters": { 
+
+                  "ServerCollection": [ 
+
+"/redfish/v1/Systems/{ComputerSystemId}", 
+
+"/redfish/v1/Systems/{ComputerSystemId}" 
+
+] 
+
+} 
+
+}' \
+ 'https://{FODIM_IP_address}/redfish/v1/AggregationService/Actions/AggregationService.SetDefaultBootOrder'
+
+
+</code></pre>
+<blockquote>
+<p>Sample request body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@Redfish.Copyright":"Copyright 2018-2019 DMTF. All rights reserved.",
+   "@odata.context":"/redfish/v1/$metadata#ActionInfo.ActionInfo",
+   "@odata.id":"/redfish/v1/AggregationService/SetDefaultBootOrderActionInfo",
+   "@odata.type":"#ActionInfo.v1_0_3.ActionInfo",
+   "Id":"AddActionInfo",
+   "Name":"SetDefaultBootOrder Action Info",
+   "parameters":{ 
+      "ServerCollection":[ 
+         "/redfish/v1/Systems/97d08f36-17f5-5918-8082-f5156618f58d:1",
+         "/redfish/v1/Systems/76632110-1c75-5a86-9cc2-471325983653:1"
+      ]
+   }
+}
+
+</code></pre><h3 id='request-parameters-3'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>@odata.context</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>@odata.id</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>@odata.type</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>Id</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>parameters[ {</td>
+<td>array</td>
+<td>The parameters associated with the SetDefaultBootOrder Action.</td>
+</tr>
+<tr>
+<td>ServerCollection } ]<br></td>
+<td></td>
+<td>Target servers for setDefaultBootOrder</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Sample response header</p>
+</blockquote>
+<pre class="highlight plaintext"><code>status: 202
+content-type:   application/json; charset=utf-8
+**location: /taskmon/task7c1b4b6c-8e46-4fb6-a66a-6f629c10d827**
+odata-version:  4.0
+x-frame-options:    sameorigin
+content-length: 0 byte
+date:   
+Fri, 08 Nov 2019 08:13:40 GMT+7m 10s
+</code></pre>
+<blockquote>
+<p>Sample response body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>None
+</code></pre><h2 id='knowing-the-change-status'>Knowing the change status</h2>
+<p>Changing the boot order to default settings on a group of servers is carried out as a set of sub-tasks: each sub-task resets a single server in the group.  </p>
+
+<p>Perform <code>GET</code> on the URI of the task monitor returned in the <code>Location</code> header.</p>
+
+<ul>
+<li><p>If the task is yet to complete, you will receive the following information in the response body:</p>
+
+<ul>
+<li>An HTTP <code>202 Accepted</code> response.</li>
+<li>Link to the list of sub-tasks associated with this group of servers. Perform <code>GET</code> on an individual <code>sub-task</code> link to know the status of the reset action on the respective server.</li>
+<li>Task status as &quot;running&quot;.</li>
+</ul></li>
+<li><p>In case of errors, you will receive the following information:</p>
+
+<ul>
+<li>An HTTP error code. </li>
+<li>An error message having a link to the main reset task in the response body.
+Copy this link and perform <code>GET</code> to view the list of sub-tasks. To know which sub-tasks have failed, perform <code>GET</code> on the links individually.</li>
+</ul></li>
+<li><p>If the action is successful, you will receive an HTTP <code>200 OK</code> response and a success message in the response body.</p></li>
+</ul>
+
+<blockquote>
+<p>**Sample response body in case of a failure</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "error":{ 
+      "code":"Base.1.0.Success",
+      "message":"An error has occurred. See ExtendedInfo for more information.",
+      "@Message.ExtendedInfo":[ 
+         { 
+            "@odata.type":"#Message.v1_0_6.Message",
+            "MessageId":"Base.1.0.Success",
+            "Message":"default error message one or more of the SetDefaultBootOrder requests failed. for more information please check SubTasks in URI: /redfish/v1/TaskService/Tasks/task7fd888a8-26f3-489f-98b6-2287aae1c76f",
+            …
+         }
+      ]
+   }
+}
+</code></pre><h2 id='deleting-a-server'>Deleting a server</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>POST</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/AggregatorService/Actions/AggregationService.Remove</code></td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Location URI of the Task Monitor associated with this operation in the response header.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>202 Accepted</code> on success</td>
+</tr>
+</tbody></table>
+<h3 id='description-4'>Description</h3>
+<p>This action removes a specific server and deletes its inventory.</p>
+
+<p>To know the status of the progress of this operation, perform <code>GET</code> on the URI of the task monitor returned in the <code>Location</code> header. If the server is successfully removed from the inventory, you will receive an HTTP <code>200 OK</code> response.</p>
+<pre class="highlight plaintext"><code>curl -i --insecure -X POST \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -H "Content-Type:application/json" \
+   -d \
+'{
+"@Redfish.Copyright": "Copyright 2018-2019 DMTF. All rights reserved.",
+"@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+"@odata.id": "/redfish/v1/AggregationService/RemoveActionInfo",
+"@odata.type": "#ActionInfo.v1_0_3.ActionInfo",
+"Id": "RemoveActionInfo",
+"Name": "Remove Action Info",
+"Oem": "",
+"parameters": [
+{
+"Name": "/redfish/v1/Systems/{ComputerSystemId}"
+}
+]
+}' \
+ 'https://{FODIM_IP_address}/redfish/v1/AggregationService/Actions/AggregationService.Remove/'
+
+
+</code></pre>
+<blockquote>
+<p>Sample request body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+    "@Redfish.Copyright": "Copyright 2018-2019 DMTF. All rights reserved.",
+    "@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+    "@odata.id": "/redfish/v1/AggregationService/RemoveActionInfo",
+    "@odata.type": "#ActionInfo.v1_0_3.ActionInfo",
+    "Id": "AddActionInfo",
+    "Name": "Remove Action Info",
+    "Oem": "",
+    "parameters": [
+        {
+            "Name": "/redfish/v1/Systems/97d08f36-17f5-5918-8082-f5156618f58d:1"
+        }
+    ]
+}
+</code></pre><h3 id='request-parameters-4'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>@odata.context</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>@odata.id</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>@odata.type</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>Id</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>string</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>Oem</td>
+<td>object</td>
+<td>Refer to Common Redfish Schema parameters.</td>
+</tr>
+<tr>
+<td>parameters[ {</td>
+<td>array</td>
+<td>The parameters associated with the Delete Action.</td>
+</tr>
+<tr>
+<td>Name } ]<br></td>
+<td>string</td>
+<td>The URI of the target to be removed - <code>&quot;/redfish/v1/Systems/{ComputerSystemId}&quot;</code></td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Sample response header</p>
+</blockquote>
+<pre class="highlight plaintext"><code>content-length: 0 byte
+content-type:   application/json; charset=utf-8
+date:   Fri, 08 Nov 2019 05:49:05 GMT+7m 10s
+**location: /taskmon/taskd5bba4ec-35a3-43cc-a058-9634c488a488**
+odata-version:  4.0
+status: 202
+x-frame-options:    sameorigin
+</code></pre>
+<blockquote>
+<p>Sample response body</p>
+</blockquote>
+<pre class="highlight plaintext"><code>None
+</code></pre><h1 id='viewing-the-resource-inventory'>Viewing the resource inventory</h1>
+<p>The FODIM API allows you to view the inventory of managed southbound equipment through Redfish SystemService endpoints. It also offers the capability to search the inventory based on one or more resource configuration parameters.</p>
+
+<p>Perform <code>GET</code> on these endpoints to discover crucial configuration information about a resource(such as CPU utilization, memory utilization, processor power consumption).</p>
+
+<p><strong>Prerequisites</strong></p>
+
+<ul>
+<li>  Ensure that the user has a minimum privilege of <code>Login</code>.</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Inventory</th>
+<th>URI</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>System overview</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}</code></td>
+<td>A collection of endpoints to system node instances that are available in the inventory.</td>
+</tr>
+<tr>
+<td>Memory overview</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/Memory</code></td>
+<td>Information on memory device configuration such as capacity, total size, logical memory size, location and so on</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td><code>/redfish/v1/Systems/&lt;ComputerSystemId&gt;/Memory/{memoryId}</code></td>
+<td>Configuration information of a memory.</td>
+</tr>
+<tr>
+<td>MemoryDomains</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/MemoryDomains</code></td>
+<td>Information on memory domain and its configuration</td>
+</tr>
+<tr>
+<td>EthernetInterfaces</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/EthernetInterfaces</code></td>
+<td>Information on Ethernet Interfaces or network interface controller(NIC).</td>
+</tr>
+<tr>
+<td>EthernetInterface</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/EthernetInterfaces/{EthernetInterfaceId}</code></td>
+<td>Information on a single, logical Ethernet Interface or network interface controller(NIC).</td>
+</tr>
+<tr>
+<td>Bios</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/bios</code></td>
+<td>System-specific information about a BIOS resource</td>
+</tr>
+<tr>
+<td>SecureBoot</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/SecureBoot</code></td>
+<td>Information on UEFI Secure Boot and managing the UEFI Secure Boot functionality of a system.</td>
+</tr>
+<tr>
+<td>Storage subsystem</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/Storage</code></td>
+<td>A storage subsystem is a set of storage controllers(physical or virtual) and the resources such as volumes that can be accessed from that subsystem.</td>
+</tr>
+<tr>
+<td>Processors</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/Processors</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Single processor</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/Processors/{processorId}</code></td>
+<td>The properties of a processor</td>
+</tr>
+<tr>
+<td>NetworkInterface</td>
+<td><code>/redfish/v1/Systems/{ComputerSystemId}/NetworkInterfaces</code></td>
+<td>A NetworkInterface contains links to NetworkAdapter, NetworkPort, and NetworkDeviceFunction resources.</td>
+</tr>
+<tr>
+<td>Chassis</td>
+<td><code>/redfish/v1/Chassis/{ComputerSystemId}</code></td>
+<td>Information on a specific Chassis instance. Chassis represents the physical components of a system - sheet-metal confined spaces, logical zones such as racks, enclosures, chassis and all other containers, and Subsystems (like sensors).</td>
+</tr>
+<tr>
+<td>Network adapters</td>
+<td><code>/redfish/v1/Chassis/{ComputerSystemId}/NetworkAdapters</code></td>
+<td>Information on NetworkAdapters. Some examples of NetworkAdapters include Ethernet, Fibre Channel, and converged network adapters.</td>
+</tr>
+<tr>
+<td>Thermal</td>
+<td><code>/redfish/v1/Chassis/{ComputerSystemId}/Thermal</code></td>
+<td>Information on the temperature and cooling of the entire Chassis.</td>
+</tr>
+<tr>
+<td>Power</td>
+<td><code>/redfish/v1/Chassis/{ComputerSystemId}/Power</code></td>
+<td>Information on processor power consumption and power limiting</td>
+</tr>
+</tbody></table>
+<h2 id='search-and-filter'>Search and filter</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/Systems?filter={searchKeys}%20{conditionKeys}%20{value}</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>Use this endpoint to search servers based on a keyword, a condition, and a value which are combined as filter in the request. Two ore more filters can be combined in a single request with the help of logical operands.<br></td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Server endpoints based on the specified filter.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200 OK</code></td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/redfish/v1/Systems?filter={searchKeys}%20{conditionKeys}%20{value}%20{logicalOperand}%20{searchKeys}%20{conditionKeys}%20{value}'
+
+</code></pre>
+<p><strong>NOTE:</strong></p>
+
+<p>Ensure that the user has <code>Login</code> privilege at the minimum.</p>
+
+<blockquote>
+<p><strong>Sample curl usage</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl -X GET \
+      -H "X-Auth-Token:{X-Auth-Token}" \
+    'http://FODIM_IP_address/redfish/v1/Systems?filter=MemorySummary/TotalSystemMemoryGiB%20eq%20384'
+
+</code></pre>
+<p><br>
+<strong>Request URI Parameters</strong> </p>
+
+<ol>
+<li><code>{searchkeys}</code> refers to ComputerSystem parameters. Following are the allowed search keys:</li>
+</ol>
+
+<p>-   &quot;ProcessorSummary/Count&quot;</p>
+
+<p>-   &quot;ProcessorSummary/Model&quot;</p>
+
+<p>-   &quot;SystemType&quot;</p>
+
+<p>-   &quot;MemorySummary/TotalSystemMemoryGiB&quot;</p>
+
+<p>-   &quot; ProcessorSummary/sockets&quot;</p>
+
+<ol>
+<li><p><code>{conditionKeys}</code> refers to Redfish specified conditions. Following are the allowed condition keys:</p>
+
+<table><thead>
+<tr>
+<th>Condition Key</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&quot;eq&quot;</td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td>&quot;ne&quot;</td>
+<td>Not equal to</td>
+</tr>
+<tr>
+<td>&quot;gt&quot;</td>
+<td>Greater than</td>
+</tr>
+<tr>
+<td>&quot;ge&quot;</td>
+<td>Greater than or equal to</td>
+</tr>
+<tr>
+<td>&quot;le&quot;</td>
+<td>Lesser than or equal to</td>
+</tr>
+<tr>
+<td>&quot;lt&quot;</td>
+<td>Lesser than</td>
+</tr>
+</tbody></table></li>
+<li><p><code>{value}</code> refers to the actual value of the search parameter.</p></li>
+<li><p><code>{logicalOperands}</code> refers to the logical operands that are used to combine two or more filters in a request. Allowed logical operands are <code>and</code>, <code>or</code>, and <code>not</code>.</p></li>
+</ol>
+
+<table><thead>
+<tr>
+<th>Sample filter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Simple filter(without logical operand): <code>filter=TotalSystemMemoryGiB%20eq%20384</code> <br></td>
+<td>This filter searches a server having total physical memory of 384 GB</td>
+</tr>
+<tr>
+<td>Compound filter(with logical operands): <code>filter=(ProcessorSummary/Count%20eq%202%20and%20ProcessorSummary/Model%20eq%20intel)%20and%20(TotalSystemMemoryGiB%20eq%20384)</code> <br></td>
+<td>This filter searches a server having total physical memory of 384 GB and Intel processor having the count of 2</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>status:200
+allow:"GET"cache-control:no-cache
+content-type:application/json; charset=utf-8
+etag:W/"12345"odata-version:4.0
+x-frame-options:sameorigin
+content-length:328 bytes
+date:Tue,
+05 Nov 2019 08:42:39 GMT+7m 7s
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.context":"/redfish/v1/$metadata#ComputerSystemCollection.ComputerSystemCollection",
+   "@odata.etag":"W/\"AA6D42B0\"",
+   "@odata.id":"/redfish/v1/Systems/",
+   "@odata.type":"#ComputerSystemCollection.ComputerSystemCollection",
+   "Description":"Computer Systems view",
+   "Name":"Computer Systems",
+   "Members":[ 
+      { 
+         "@odata.id":"/redfish/v1/Systems/7ff3bd97-c41c-5de0-937d-85d390691b73:1"
+      }
+   ],
+   "Members@odata.count":1
+}
+</code></pre><h2 id='use-case-for-viewing-the-fabric-inventory'>Use case for viewing the fabric inventory</h2><h3 id='collection-of-fabrics'>Collection of fabrics</h3>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/Fabrics</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A collection of references to simple fabrics. A simple fabric consist of switches, endpoints, and zones.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Links to the fabric instances.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://FODIM_IP_address/redfish/v1/Fabrics'
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>allow:"GET"
+cache-control:no-cache
+content-length:228 bytes
+content-type:application/json; charset=utf-8
+date:Tue,05 Nov 2019 06:29:12 GMT+7m 6s
+etag:W/"12345"
+odata-version:4.0
+status:200
+x-frame-options:sameorigin
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.id":"/redfish/v1/Fabrics",
+   "Id":"FabricCollection",
+   "Members":[ 
+      "/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5"
+   ],
+   "Members@data.count":1,
+   "Name":"FabricCollection",
+   "RedfishVersion":"1.0.4",
+   "odata.type":"#FabricCollection.FabricCollection"
+}
+</code></pre><h3 id='single-fabric-instance'>Single fabric instance</h3>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/Fabrics/{fabricID}</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>Schema representing a specific fabric.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Endpoints to various components contained in this fabric instance.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200 Ok</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://FODIM_IP_address/redfish/v1/Fabrics/{fabricID}'
+
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>allow:"GET"
+cache-control:no-cache
+content-length:228 bytes
+content-type:application/json; charset=utf-8
+date:Tue,05 Nov 2019 06:29:12 GMT+7m 6s
+etag:W/"12345"
+odata-version:4.0
+status:200
+x-frame-options:sameorigin
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5",
+   "@odata.type":"#Fabric.v1_0_4.Fabric",
+   "AddressPools":{ 
+      "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/AddressPools"
+   },
+   "Description":"test",
+   "Endpoints":{ 
+      "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Endpoints"
+   },
+   "FabricType":"Ethernet",
+   "Id":"f4d1578a-d16f-43f2-bb81-cd6db8866db5",
+   "Name":"cfm-test",
+   "Status":{ 
+      "Health":"OK",
+      "State":"Enabled"
+   },
+   "Switches":{ 
+      "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches"
+   },
+   "Zones":{ 
+      "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Zones"
+   }
+}
+</code></pre><h3 id='collection-of-switches'>Collection of switches</h3>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/Fabrics/{fabricID}/Switches</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A collection of references to the fabric switch instances contained in this fabric.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Links to the switch instances.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://FODIM_IP_address/redfish/v1/Fabrics/{fabricID}/Switches'
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>allow:"GET"
+cache-control:no-cache
+content-length:228 bytes
+content-type:application/json; charset=utf-8
+date:Tue,05 Nov 2019 06:29:12 GMT+7m 6s
+etag:W/"12345"
+odata-version:4.0
+status:200
+x-frame-options:sameorigin
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches",
+   "Id":"SwitchCollection",
+   "Members":[ 
+      "/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9",
+      "/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/b9c165cf-a3e6-43c4-ac17-6e91d5792244"
+   ],
+   "Members@data.count":2,
+   "Name":"SwitchCollection",
+   "odata.type":"#SwitchCollection.SwitchCollection"
+}
+</code></pre><h3 id='single-switch'>Single Switch</h3>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/Fabrics/{fabricID}/Switches/{switchID}</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>Schema representing a particular fabric switch.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Properties of this switch and links to its ports.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://FODIM_IP_address/redfish/v1/Fabrics/{fabricID}/Switches/{switchID}'
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>allow:"GET"
+cache-control:no-cache
+content-length:228 bytes
+content-type:application/json; charset=utf-8
+date:Tue,05 Nov 2019 06:29:12 GMT+7m 6s
+etag:W/"12345"
+odata-version:4.0
+status:200
+x-frame-options:sameorigin
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9",
+   "@odata.type":"#Switch.v1_1_2.Switch",
+   "Id":"c1b0ac48-e003-4d70-a707-450b128977d9",
+   "Manufacturer":"Switch 10.24.1.105",
+   "Model":"ArubaOS-CX_OVA",
+   "Name":"Switch 10.24.1.105",
+   "PartNumber":"OVA16FD88",
+   "Ports":{ 
+      "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9/Ports"
+   },
+   "SerialNumber":"OVA16FD88",
+   "Status":{ 
+      "Health":"UNKNOWN",
+      "State":"Enabled"
+   },
+   "SwitchType":"Ethernet"
+}
+</code></pre><h3 id='collection-of-ports'>Collection of ports</h3>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/Fabrics/{fabricID}/Switches/{switchID}/Ports</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A collection of references to the ports for this switch.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Links to the port instances.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200 Ok</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://FODIM_IP_address/redfish/v1/Fabrics/{fabricID}/Switches/{switchID}/Ports'
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>allow:"GET"
+cache-control:no-cache
+content-length:228 bytes
+content-type:application/json; charset=utf-8
+date:Tue,05 Nov 2019 06:29:12 GMT+7m 6s
+etag:W/"12345"
+odata-version:4.0
+status:200
+x-frame-options:sameorigin
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9/Ports",
+   "Id":"PortCollection",
+   "Members":[ 
+      "/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9/Ports/0cb2ff96-b7a7-4627-a7b4-274d915f2524",
+      "/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9/Ports/54096ea1-cfb8-4a6c-b7a3-d6263db729a6",
+      "/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9/Ports/699b8f82-a6bf-47fa-a594-d73c95a8f81e",
+      "/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9/Ports/7dd6b8c6-de72-4499-98dc-568a16e28a88",
+      "/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9/Ports/9d097004-e034-4772-98c5-fa695688cc4d",
+      "/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9/Ports/b82e663b-6d1e-43c9-9d49-63b68b2a5b06"
+   ],
+   "Members@data.count":6,
+   "Name":"PortCollection",
+   "odata.type":"#PortCollection.PortCollection"
+}
+
+</code></pre><h3 id='a-single-port'>A single port</h3>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/Fabrics/{fabricID}/Switches/{switchID}/Ports/{portid}</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>Schema representing a specific port.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Properties of this port.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200 OK</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://FODIM_IP_address/redfish/v1/Fabrics/{fabricID}/Switches/{switchID}/Ports/{portid}'
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>allow:"GET"
+cache-control:no-cache
+content-length:228 bytes
+content-type:application/json; charset=utf-8
+date:Tue,05 Nov 2019 06:29:12 GMT+7m 6s
+etag:W/"12345"
+odata-version:4.0
+status:200
+x-frame-options:sameorigin
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.id":"/redfish/v1/Fabrics/f4d1578a-d16f-43f2-bb81-cd6db8866db5/Switches/c1b0ac48-e003-4d70-a707-450b128977d9/Ports/0cb2ff96-b7a7-4627-a7b4-274d915f2524",
+   "@odata.type":"#Port.v1_1_2.Port",
+   "CurrentSpeedGbps":0,
+   "Description":"",
+   "Id":"0cb2ff96-b7a7-4627-a7b4-274d915f2524",
+   "MaxSpeedGbps":"qsfp_4x25_gbps",
+   "Name":"1/1/2",
+   "PortId":"1/1/2",
+   "PortProtocol":"Ethernet",
+   "PortType":"BidirectionalPort",
+   "Status":{ 
+      "Health":"",
+      "State":"down"
+   },
+   "Width":4
+}
+</code></pre><h1 id='managing-tasks'>Managing tasks</h1>
+<p>A task represents an operation that takes more time than a user typically wants to wait and is carried out asynchronously.</p>
+
+<p>An example of a task is resetting an aggregate of servers. Resetting all the servers in a group is a time-consuming operation; the user waiting for the result would be blocked from performing other operations. The FODIM creates Redfish tasks for such long-duration operations and offers an interface for the users to manage them while performing other operations.</p>
+
+<p>The FODIM exposes Redfish TaskService APIs and Task monitor API. Use these endpoints to manage and monitor tasks till their completion.</p>
+
+<p><strong>Prerequisites</strong></p>
+
+<ul>
+<li>  Ensure that the user has <code>Login</code> privilege at the minimum.</li>
+</ul>
+
+<p><strong>Supported Endpoints</strong></p>
+
+<ul>
+<li><p><code>/redfish/v1/TaskService</code></p></li>
+<li><p><code>/redfish/v1/TaskService/Tasks</code></p></li>
+<li><p><code>/redfish/v1/TaskService/Tasks/{TaskID}</code></p></li>
+<li><p><code>/taskmon/{TaskID}</code></p></li>
+</ul>
+<h2 id='viewing-a-collection-of-tasks'>Viewing a Collection of tasks</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/TaskService/Tasks</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A collection of tasks scheduled by or being executed by Redfish Task Service.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>A list of task endpoints with task Ids.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>  curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/redfish/v1/TaskService/Tasks'
+
+</code></pre>
+<p><strong>NOTE:</strong></p>
+
+<p>Only an <code>admin</code> or a user with <code>ConfigureUsers</code> privilege can view  all the running tasks in the FODIM API at a given point of time. Other users can view tasks created only for their operations.</p>
+
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>allow:"GET"
+cache-control:no-cache
+content-length:345 bytes
+content-type:application/json; charset=utf-8
+date:Tue,05 Nov 2019 13:33:46 GMT+5h 37m
+etag:W/"12345"
+odata-version:4.0
+status:200
+x-frame-options:sameorigin
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.context":"/redfish/v1/$metadata#TaskCollection.TaskCollection",
+   "@odata.etag":"",
+   "@odata.id":"/redfish/v1/TaskService/Tasks",
+   "@odata.type":"#TaskCollection.TaskCollection",
+   "Name":"Task Collection",
+   "Description":"",
+   "Members@odata.count":3,
+   "Members":[ 
+      { 
+         "@odata.id":"/redfish/v1/TaskService/Tasks/taskc8cf2e2e-6cb2-4e24-8512-247fa5d606b0"
+      },
+      { 
+         "@odata.id":"/redfish/v1/TaskService/Tasks/taskc15aca5a-30a6-4618-adca-c25c889dc409"
+      },
+      { 
+         "@odata.id":"/redfish/v1/TaskService/Tasks/task38d6df20-989f-4c05-ad0e-5939774bab7c"
+      }
+   ]
+}
+</code></pre><h2 id='viewing-information-of-a-single-task'>Viewing information of a single task</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/TaskService/Tasks/{TaskID}</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A specific task scheduled by or being executed by Redfish Task Service.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Details of this task - task Id, name, state of the task, start time and end time( in case task is complete) of this task, completion percentage, URI of the task monitor associated with this task, sub-tasks if any.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>200</code> on success</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+ 'https://{FODIM_IP_address}/redfish/v1/TaskService/Tasks/{TaskID}'
+
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>allow:"GET"
+cache-control:no-cache
+content-length:345 bytes
+content-type:application/json; charset=utf-8
+date:Tue,05 Nov 2019 13:33:46 GMT+5h 37m
+etag:W/"12345"
+odata-version:4.0
+status:200
+x-frame-options:sameorigin
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   "@odata.type":"#Task.v1_3_0.Task",
+   "Id":"taskc15aca5a-30a6-4618-adca-c25c889dc409",
+   "Name":"Task taskc15aca5a-30a6-4618-adca-c25c889dc409",
+   "Description":"",
+   "TaskState":"Completed",
+   "StartTime":"2019-11-13 13:50:51.711162494 +0530 IST",
+   "EndTime":"2019-11-13 08:21:26.64315461 +0000 UTC",
+   "TaskStatus":"OK",
+   "SubTasks":"/redfish/v1/Tasks/taskc15aca5a-30a6-4618-adca-c25c889dc409/SubTasks",
+   "TaskMonitor":"/taskmon/taskc15aca5a-30a6-4618-adca-c25c889dc409",
+   "PercentComplete":100,
+   "Payload":{ 
+      "HttpHeaders":{ 
+         "Content-type":"application/json; charset=utf-8",
+         "Location":"/redfish/v1/Systems/97d08f36-17f5-5918-8082-f5156618f58d:1"
+      },
+      "HttpOperation":"GET",
+      "JsonBody":{ 
+         "@odata.id":"/redfish/v1/Systems/97d08f36-17f5-5918-8082-f5156618f58d:1"
+      },
+      "TargetUri":"/redfish/v1/AggregationService/Actions/AggregationService.Add"
+   },
+   "Messages":null,
+   "@odata.context":"/redfish/v1/$metadata#Task.Task",
+   "@odata.id":"/redfish/v1/TaskService/Tasks/taskc15aca5a-30a6-4618-adca-c25c889dc409"
+}
+</code></pre><h2 id='monitoring-a-task-through-task-monitor'>Monitoring a task through task monitor</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>GET</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/taskmon/{TaskID}</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>Task monitor allows for polling a specific task for its completion.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>Result of the operation carried out by the task monitor.</td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td>-   202 until the task is complete.<br>-   200, 201 on success.<br></td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X GET \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -H "Content-Type:application/json" \
+ 'https://{FODIM_IP_address}/taskmon/{TaskID}'
+
+</code></pre><h1 id='subscribing-to-events'>Subscribing to events <a name="events"></a></h1>
+<p>The FODIM offers an eventing interface that allows northbound clients to interact and receive notifications such as alarms from southbound equipment. It exposes Redfish EventService APIs as an interface for managing events.</p>
+
+<p>Events are messages provided by the service to asynchronously notify the client of some significant state change or error condition, usually of a time critical nature.</p>
+
+<p>Use these APIs to subscribe northbound clients to southbound events by creating a subscription entry in the service.</p>
+
+<p><strong>Prerequisites</strong></p>
+
+<ul>
+<li><p>Ensure that Kafka is installed.</p></li>
+<li><p>Ensure that the user has an <code>administrator</code> role or a <code>client</code> role.</p></li>
+</ul>
+
+<p><strong>Supported Endpoints</strong></p>
+
+<ul>
+<li><p><code>redfish/v1/EventService</code></p></li>
+<li><p><code>/redfish/v1/EventService/Subscriptions</code></p></li>
+</ul>
+<h2 id='creating-an-event-subscription'>Creating an event subscription</h2>
+<table><thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><code>POST</code></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>URI</strong></td>
+<td><code>/redfish/v1/EventService/Subscriptions</code></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>This endpoint subscribes one or more clients to an event by creating a subscription entry.</td>
+</tr>
+<tr>
+<td><strong>Returns</strong></td>
+<td>A <code>Location</code> header that contains a hyperlink to the newly created subscription.<br>  On success, a message in the JSON response body saying that the subscription is created.<br></td>
+</tr>
+<tr>
+<td><strong>Response Code</strong></td>
+<td><code>201</code></td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>curl --insecure -X POST \
+   -H "X-Auth-Token:{X-Auth-Token}" \
+   -H "Content-Type:application/json; charset=utf-8" \
+   -d \
+'{
+                "Name": "subscription123",
+                "Destination": "https://10.24.1.16:10002/redfish/v1/EventService/",
+                "EventTypes": [
+                  "Alert"
+                ],
+                "Context": "ABCDEFGHJLKJ",
+                "Protocol": "Redfish",
+                "SubscriptionType": "RedfishEvent",
+                "EventFormatType": "Event",
+                "SubordinateResources": true,
+                "OriginResources": [
+                   "/redfish/v1/Systems/{System Id}"
+                ],
+                    "Oem": {
+                      "Hpe": { 
+                          "DeliveryRetryIntervalInSeconds": 30, 
+                          "RequestedMaxEventsToQueue": 20,
+                          "DeliveryRetryAttempts": 5, 
+                          "RetireOldEventInMinutes": 10 
+                      } 
+                  } 
+
+}' \
+ 'https://{FODIM_IP_address}/redfish/v1/EventService/Subscriptions/'
+
+</code></pre>
+<blockquote>
+<p><strong>Sample Request body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+                "Name": "subscription123",
+                "Destination": "http://10.24.1.52:10002/redfish/v1/EventService/",
+                "EventTypes": [
+                  "Alert"
+                ],
+                "Context": "ABCDEFGHJLKJ",
+                "Protocol": "Redfish",
+                "SubscriptionType": "RedfishEvent",
+                "EventFormatType": "Event",
+                "SubordinateResources": true,
+                "OriginResources": [
+                   "/redfish/v1/Systems/76632110-1c75-5a86-9cc2-471325983653:1"
+                ],
+                    "Oem": {
+                      "Hpe": { 
+                          "DeliveryRetryIntervalInSeconds": 30, 
+                          "RequestedMaxEventsToQueue": 20,
+                          "DeliveryRetryAttempts": 5, 
+                          "RetireOldEventInMinutes": 10 
+                      } 
+                  } 
+
+              }
+
+
+</code></pre><h2 id='request-parameters-5'>Request Parameters</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Name</td>
+<td>string</td>
+<td></td>
+<td>Name of the subscription.</td>
+</tr>
+<tr>
+<td>Destination</td>
+<td>string</td>
+<td>read-only required on create<br></td>
+<td>The URI of the destination Event Service.</td>
+</tr>
+<tr>
+<td>EventTypes</td>
+<td>array (string (enum))</td>
+<td>read-only</td>
+<td>The types of events that will be sent to the destination.</td>
+</tr>
+<tr>
+<td>Context</td>
+<td>string</td>
+<td>read-write required (null)<br></td>
+<td>A client-supplied string that is stored with the event destination subscription.</td>
+</tr>
+<tr>
+<td>Protocol</td>
+<td>string (enum)</td>
+<td>read-only required on create<br></td>
+<td>The protocol type of the event connection.</td>
+</tr>
+<tr>
+<td>SubscriptionType</td>
+<td>string (enum)</td>
+<td>read-only required (null)<br></td>
+<td>Indicates the subscription type for events</td>
+</tr>
+<tr>
+<td>EventFormatType</td>
+<td>string (enum)</td>
+<td>read-only</td>
+<td>Indicates the content types of the message that this service can send to the event destination.</td>
+</tr>
+<tr>
+<td>SubordinateResources</td>
+<td>boolean</td>
+<td>read-only (null)</td>
+<td>This indicates if the service supports the SubordinateResource property on Event Subscriptions i.e.,subscription will be for events from the OriginsResources specified and also all subordinate resources.</td>
+</tr>
+<tr>
+<td>OriginResources</td>
+<td>array</td>
+<td></td>
+<td>A list of resources for which the service will only send related events. If this property is absent or the array is empty, then Events originating from any resource will be sent to the subscriber.</td>
+</tr>
+</tbody></table>
+
+<p><strong>Event Types</strong></p>
+
+<table><thead>
+<tr>
+<th>string</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Alert</td>
+<td>A condition exists which requires attention.</td>
+</tr>
+<tr>
+<td>MetricReport</td>
+<td>A metric report managed by the Telemetry Service is being sent.</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>As of Redfish Specification v1.6, EventType has been deprecated. The event is therefore based on a Registry or Resource, not an EventType.</td>
+</tr>
+<tr>
+<td>ResourceAdded</td>
+<td>A resource has been added.</td>
+</tr>
+<tr>
+<td>ResourceRemoved</td>
+<td>A resource has been removed.</td>
+</tr>
+<tr>
+<td>ResourceUpdated</td>
+<td>The value of this resource has been updated.</td>
+</tr>
+<tr>
+<td>StatusChange</td>
+<td>The status of this resource has changed.</td>
+</tr>
+</tbody></table>
+
+<p><strong>EventFormatType</strong></p>
+
+<table><thead>
+<tr>
+<th>string</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Event</td>
+<td>The subscription destination will receive JSON Bodies of the Resource Type Event.</td>
+</tr>
+<tr>
+<td>MetricReport</td>
+<td>The subscription destination will receive JSON Bodies of the Resource Type MetricReport.</td>
+</tr>
+</tbody></table>
+
+<p><strong>SubscriptionType</strong></p>
+
+<table><thead>
+<tr>
+<th>string</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>RedfishEvent</td>
+<td>The subscription follows the Redfish specification for event notifications, which is done by a service sending an HTTP POST to the subscriber&#39;s destination URI.</td>
+</tr>
+<tr>
+<td>SSE</td>
+<td>The subscription follows the HTML5 Server-Sent Event definition for event notifications.</td>
+</tr>
+</tbody></table>
+
+<p><strong>Protocol</strong></p>
+
+<table><thead>
+<tr>
+<th>string</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Redfish</td>
+<td>The destination follows the Redfish specification for event notifications.</td>
+</tr>
+</tbody></table>
+
+<p>*Source : Redfish Resource and Schema Guide</p>
+
+<blockquote>
+<p><strong>Sample Response header</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>status: 201​
+cache-control: no-cache​
+content-type: application/json; charset=utf-8​
+etag:  W/"12345"​
+**location: /redfish/v1/EventService/Subscriptions/7e60f5bf-439c-4e14-acfd-ab4155257484**​
+odata-version: 4.0​
+x-frame-options: sameorigin​
+content-length: 161 bytes​
+date: Thu, 14 Nov 2019 10:26:48 GMT+7m 17s
+</code></pre>
+<blockquote>
+<p><strong>Sample Response body</strong> </p>
+</blockquote>
+<pre class="highlight plaintext"><code>{ 
+   ​   "error":​{ 
+      ​      "@Message.ExtendedInfo":​[ 
+         ​         { 
+            ​            "MessageId":"Base.1.0.Created"            ​
+         }         ​
+      ],
+      ​      "code":"iLO.0.10.ExtendedInfo",
+      ​      "message":"See @Message.ExtendedInfo for more information."      ​
+   }   ​
+}​
+</code></pre><h1 id='end-to-end-use-cases'>End-to-end use cases</h1>
+<p>The basic use cases for the FODIM API include:</p>
+
+<ol>
+<li><p>Creating a user account</p>
+
+<p>Users other than <code>admin</code> need to create a user account by specifying a username, password, and a role before they can create a login session with the FODIM API.</p>
+
+<p>For examples, consult &quot;Creating and managing user accounts&quot; section.</p></li>
+<li><p>Creating a login session</p>
+
+<p>Create a login session with the FODIM API to obtain an <code>X-AUTH-TOKEN</code> which is required to authenticate subsequent requests(skip this if you choose Basic authetication method).</p>
+
+<p>For examples, consult &quot;Creating and managing sessions&quot; section.</p></li>
+<li><p>Adding the resources that you want to manage</p>
+
+<p>Add all the resources to be managed one by one. The FODIM API builds a detailed inventory of every resource that is added.</p>
+
+<p>For examples, consult &quot;Aggregating and managing southbound equipment&quot; section.</p></li>
+<li><p>Searching and viewing the resource inventory information</p>
+
+<p>The resource inventory contains crucial system details such as CPU details, memory details, chassis, power details. You can search the inventory based on a specific system parameter.</p>
+
+<p>For examples, consult &quot;Accessing the inventory of a managed southbound resource&quot; section.</p></li>
+<li><p>Managing the resource: performing actions on the resource</p>
+
+<p>Perform actions such as resetting, changing the boot order to default settings.</p>
+
+<p>For examples, consult &quot;Aggregating and managing southbound equipment&quot; section.</p></li>
+<li><p>Deleting a resource that is no longer managed</p>
+
+<p>Delete resources that you do not want to manage anymore.</p>
+
+<p>For examples, consult &quot;Aggregating and managing southbound equipment&quot; section.  </p></li>
+<li><p>Managing tasks</p>
+
+<p>View and monitor a list of running tasks initiated by the user such as adding a resource, resetting, deleting.</p>
+
+<p>For examples, consult &quot;Managing tasks&quot; section.</p></li>
+<li><p>Subscribing to events</p>
+
+<p>Get notified of alarms from the southbound resources.</p>
+
+<p>For examples, consult <a href="#events">Subscribing northbound clients to southbound events</a> section.</p></li>
+</ol>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="cURL">cURL</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
